@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Class1.cs",
+              "RelativeDocumentMoniker": "App.Core\\Class1.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Class1.cs",
+              "RelativeToolTip": "App.Core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:07:55.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Class1.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:07:41.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Domain\\Class1.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Class1.cs",
+              "RelativeToolTip": "Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T16:07:16.474Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
