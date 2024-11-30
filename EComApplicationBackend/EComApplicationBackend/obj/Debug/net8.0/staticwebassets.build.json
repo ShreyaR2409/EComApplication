@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "psWfXv1woBmPDcH52I3bmb3aA8HgfGlMpxmYEosXH+c=",
+  "Source": "EComApplicationBackend",
+  "BasePath": "_content/EComApplicationBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

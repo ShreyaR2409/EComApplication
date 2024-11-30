@@ -1,0 +1,53 @@
+﻿using App.Core.Interfaces;
+using App.Core.Models;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace App.Core.App.User.Command
+{
+    public class VerifyOtpCommand : IRequest<JwtResponseDto>
+    {
+        public VerifyOtpDto VerifyOtp { get; set; }
+    }
+
+    public class VerifyOtpCommandHandler : IRequestHandler<VerifyOtpCommand, JwtResponseDto>
+    {
+        private readonly IAppDbContext _appDbContext;
+        private readonly IJwtService _jwtService;
+
+        public VerifyOtpCommandHandler(IAppDbContext appDbContext, IJwtService jwtService)
+        {
+            _appDbContext = appDbContext;
+            _jwtService = jwtService;
+        }
+
+        public async Task<JwtResponseDto> Handle(VerifyOtpCommand request, CancellationToken token)
+        {
+            var verifyOtpModel = request.VerifyOtp;
+
+            var otpEntity = await _appDbContext.Set<Domain.Entities.Otp>()
+                .FirstOrDefaultAsync(x => x.userid == verifyOtpModel.UserId && x.otp == verifyOtpModel.Otp);
+
+            if (otpEntity == null)
+            {
+                return null;
+            }
+
+            var user = await _appDbContext.Set<Domain.Entities.User>().FirstOrDefaultAsync(x => x.id == verifyOtpModel.UserId);
+            if (user == null)
+            {
+                return null;
+            }
+
+            //var token = _jwtService.GenerateToken(user);
+            return new JwtResponseDto
+            {
+                //Token = token
+                Token = _jwtService.GenerateToken(user)
+            };
+        }
+    }
+}

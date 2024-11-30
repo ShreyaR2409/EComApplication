@@ -1,12 +1,256 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\app\\user\\command\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\models\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\app\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\app\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\verifyotpcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\infrastructure\\migrations\\20241130071028_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241130071028_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\models\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\verifyotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\models\\jwtresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\jwtresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\app.core\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\domain\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|c:\\users\\hp\\downloads\\ecomapplicationbackend\\ecomapplicationbackend\\ecomapplicationbackend\\domain\\entities\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgotPasswordCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAlwEsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T12:45:54.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\ForgotPasswordDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\ForgotPasswordDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\ForgotPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T12:44:57.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerifyOtpCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\VerifyOtpCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\VerifyOtpCommand.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\VerifyOtpCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\User\\Command\\VerifyOtpCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:02:42.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\LoginUserCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App\\User\\Command\\LoginUserCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\User\\Command\\LoginUserCommand.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwDgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:01:58.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EComApplicationBackend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T12:33:09.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\appsettings.json",
+              "RelativeToolTip": "EComApplicationBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T07:08:53.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241130071028_init.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\Migrations\\20241130071028_init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241130071028_init.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\Migrations\\20241130071028_init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241130071028_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:10:29.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Program.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Program.cs",
+              "RelativeToolTip": "EComApplicationBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T05:32:59.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VerifyOtpDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\VerifyOtpDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\VerifyOtpDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\VerifyOtpDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\VerifyOtpDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:03:15.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAtwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:29:22.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JwtResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\JwtResponseDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\JwtResponseDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\JwtResponseDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\JwtResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:03:36.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\LoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\Models\\LoginResponseDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:19:33.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Otp.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Entities\\Otp.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Otp.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Entities\\Otp.cs",
+              "RelativeToolTip": "Domain\\Entities\\Otp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:25:53.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "State.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Entities\\State.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\State.cs",
+              "ToolTip": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Entities\\State.cs",
+              "RelativeToolTip": "Domain\\Entities\\State.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T04:56:15.008Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

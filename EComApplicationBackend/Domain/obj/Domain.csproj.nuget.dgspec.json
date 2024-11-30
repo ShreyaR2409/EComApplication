@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj": {}
+    "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj": {
+    "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
