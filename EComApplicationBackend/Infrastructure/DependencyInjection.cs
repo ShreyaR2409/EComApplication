@@ -20,8 +20,13 @@ namespace Infrastructure
             services.AddScoped<IAppDbContext, AppDbContext>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IJwtService, JwtService>();
-            services.AddScoped<IPasswordHasher<Domain.Entities.User>, PasswordHasher<Domain.Entities.User>>();
+            services.AddScoped<IRoleService, RoleService>();
 
+            services.AddScoped<IPasswordHasher<Domain.Entities.User>, PasswordHasher<Domain.Entities.User>>();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+            });
             services.AddDbContext<AppDbContext>((provider, options) =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),

@@ -28,26 +28,30 @@ namespace App.Core.App.User.Command
         {
             var verifyOtpModel = request.VerifyOtp;
 
+            // Retrieve the user using the username
+            var user = await _appDbContext.Set<Domain.Entities.User>()
+                .FirstOrDefaultAsync(x => x.username == verifyOtpModel.Username);
+
+            if (user == null)
+            {
+                return null; // User not found
+            }
+
+            // Now use the userId to verify the OTP
             var otpEntity = await _appDbContext.Set<Domain.Entities.Otp>()
-                .FirstOrDefaultAsync(x => x.userid == verifyOtpModel.UserId && x.otp == verifyOtpModel.Otp);
+                .FirstOrDefaultAsync(x => x.userid == user.id && x.otp == verifyOtpModel.Otp);
 
             if (otpEntity == null)
             {
-                return null;
+                return null; // Invalid OTP
             }
 
-            var user = await _appDbContext.Set<Domain.Entities.User>().FirstOrDefaultAsync(x => x.id == verifyOtpModel.UserId);
-            if (user == null)
-            {
-                return null;
-            }
-
-            //var token = _jwtService.GenerateToken(user);
+            // Generate JWT token for the user
             return new JwtResponseDto
             {
-                //Token = token
                 Token = _jwtService.GenerateToken(user)
             };
         }
+
     }
 }

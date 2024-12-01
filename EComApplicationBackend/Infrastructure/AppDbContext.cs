@@ -22,6 +22,7 @@ namespace Infrastructure
         public DbSet<State> States { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Otp> Otps { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         // For Dapper
         public IDbConnection GetConnection()

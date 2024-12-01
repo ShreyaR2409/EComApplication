@@ -12,6 +12,7 @@ namespace EComApplicationBackend.Controllers
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
+
         public UserController(IMediator mediator)
         {
             _mediator = mediator;
@@ -34,7 +35,7 @@ namespace EComApplicationBackend.Controllers
             var result = await _mediator.Send(new LoginUserCommand { Login = loginDto });
             if(result == null)
             {
-                return BadRequest();
+                return Ok("Failure");
             }
             return Ok(result);
         }
@@ -61,10 +62,42 @@ namespace EComApplicationBackend.Controllers
             return Ok("A new password has been sent to your email.");
         }
 
+        [HttpPost("ChangePassword")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto changePasswordDto)
+        {
+            // Assuming you get the UserId from the JWT token or session
+            var userId = User.FindFirst("UserId")?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized("User not authenticated");
+            }
+
+            var result = await _mediator.Send(new ChangePasswordCommand
+            {
+                UserId = userId,
+                ChangePasswordDto = changePasswordDto
+            });
+
+            if (!result)
+            {
+                return BadRequest("New password cannot be the same as the current password.");
+            }
+
+            return Ok("Password changed successfully");
+        }
+
         [HttpGet("Roles")]
         public async Task<IActionResult> GetAllRoles()
         {
             var result = await _mediator.Send(new GetUserRoleQuery());
+            return Ok(result);
+        }
+
+        [HttpGet("UserByUsername")]
+        public async Task<IActionResult> GetUserByUsername(string UserName)
+        {
+            var result = await _mediator.Send(new GetUserByUsername { UserName = UserName });
             return Ok(result);
         }
     }

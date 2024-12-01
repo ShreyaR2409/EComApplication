@@ -198,6 +198,23 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -1732,6 +1749,7 @@
           "Mapster": "7.4.0",
           "MediatR": "12.4.1",
           "Microsoft.AspNet.Identity.Core": "2.2.4",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
           "Microsoft.Extensions.Identity.Core": "9.0.0"
@@ -1987,6 +2005,25 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.9.0.0.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -4924,11 +4961,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\Infrastructure\\obj\\",
+      "outputPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4946,8 +4983,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
-              "projectPath": "C:\\Users\\HP\\Downloads\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend\\App.Core\\App.Core.csproj"
+            "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
+              "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj"
             }
           }
         }

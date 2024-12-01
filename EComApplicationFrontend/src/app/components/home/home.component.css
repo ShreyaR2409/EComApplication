@@ -1,0 +1,42 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .icon-btn {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 1.2rem;
+  }
+
+  .icon-btn:hover {
+    color: #007bff;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #dc3545;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+
+  /* Customize the badge position */
+.position-absolute {
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  

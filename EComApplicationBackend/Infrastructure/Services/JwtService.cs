@@ -27,7 +27,7 @@ namespace Infrastructure.Services
             {
             new Claim(ClaimTypes.NameIdentifier, user.id.ToString()),
             new Claim(ClaimTypes.Name, user.username),
-            //new Claim(ClaimTypes.Role, user.roleid),
+            new Claim(ClaimTypes.Role, user.roleid.ToString())  
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));

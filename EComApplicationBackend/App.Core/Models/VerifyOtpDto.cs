@@ -8,7 +8,7 @@ namespace App.Core.Models
 {
     public class VerifyOtpDto
     {
-        public int UserId { get; set; }
+        public string Username { get; set; }
         public string Otp { get; set; }
     }
 }
