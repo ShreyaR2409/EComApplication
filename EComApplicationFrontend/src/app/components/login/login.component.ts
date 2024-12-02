@@ -76,6 +76,7 @@ export class LoginComponent {
       this.authService.verifyOtp(otpData).subscribe({
         next: (res) => {
           alert('OTP Verified Successfully!');
+          this.authService.loadCurrentUser();
           this.router.navigateByUrl('home');
           this.closeOtpModal();
         },

@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit{
   }
 
   checkUserRole(): void {
-    this.userRole = this.authService.getUserRole();
+    // this.userRole = this.authService.getUserRole();
   }
 
   isAdmin(): boolean {
