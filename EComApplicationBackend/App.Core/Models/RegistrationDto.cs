@@ -16,13 +16,11 @@ namespace App.Core.Models
         public int roleid { get; set; }
         public DateOnly dob { get; set; }
         public string? mobilenumber { get; set; }
-        //public string? profileimage { get; set; }
+        public IFormFile? profileimage { get; set; }
         public string? address { get; set; }
         public string? zipcode { get; set; }
         public int countryid { get; set; }
         public int stateid { get; set; }
-        public IFormFile ProfileImage { get; set; } // Handle file upload
-        public string ProfileImageUrl { get; set; } // URL for the uploaded image
 
 
     }

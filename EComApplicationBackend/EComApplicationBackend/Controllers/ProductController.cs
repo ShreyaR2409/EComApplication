@@ -21,10 +21,10 @@ namespace EComApplicationBackend.Controllers
             _mediator = mediator;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
 
         [HttpPost("Add-Product")]
-        public async Task<IActionResult> AddProduct(ProductDto productDto)
+        public async Task<IActionResult> AddProduct([FromForm] ProductDto productDto)
         {
             var result = await _mediator.Send(new AddProductCommand { product = productDto });
             if (result == null)
@@ -33,7 +33,7 @@ namespace EComApplicationBackend.Controllers
             }
             return Ok(result);
         }
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
 
         [HttpPut("Update-Product/{id}")]
         public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto productDto)
@@ -61,7 +61,7 @@ namespace EComApplicationBackend.Controllers
 
             return Ok(result);
         }
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
 
         [HttpDelete("Delete-Product")]
         public async Task<IActionResult> DeleteProduct(int id)

@@ -9,21 +9,38 @@ import { AuthService } from '../../services/authServices/auth.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent{
   userRole: string | null = null;
+  userName : string ;
+  isAdmin : boolean = true;
+  profile: any;
+  profileimg: string = '';
 
-  constructor(private authService: AuthService) {}
-
-  ngOnInit(): void {
-    this.checkUserRole();
+  constructor(private authService: AuthService) {
+    this.userRole = sessionStorage.getItem("role");
+    this.userName = sessionStorage.getItem("username") ?? '';
+    this.getProfile();
   }
 
-  checkUserRole(): void {
-    // this.userRole = this.authService.getUserRole();
+  isAdminFn(): boolean {
+    if(this.userRole ==  "1"){
+      this.isAdmin = true;
+      return true;
+    } 
+    else
+    this.isAdmin = false;
+    return false;
   }
 
-  isAdmin(): boolean {
-    return this.userRole === '1'; // Dynamically check if the user is admin
+  getProfile(){
+    this.authService.getUserByUsername(this.userName).subscribe((data) => {
+      this.profile = data;
+      console.log("User Profile",this.profile);
+      
+      this.profileimg = this.profile.profileimage;
+      console.log("profileimg", this.profileimg);
+    })
   }
+
 
 }

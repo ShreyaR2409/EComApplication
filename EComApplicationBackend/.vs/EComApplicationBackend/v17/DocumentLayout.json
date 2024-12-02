@@ -1,98 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\",
+  "WorkspaceRootPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\app\\user\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\product\\query\\getproductbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\countrycity\\query\\getstatesbycountryidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\countrycity\\query\\getstatesbycountryidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\query\\getuserrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\query\\getuserrolequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\models\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\product\\command\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\product\\command\\addproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\product\\command\\addproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\command\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\infrastructure\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\command\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\infrastructure\\migrations\\20241130071028_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241130071028_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\jwtresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\jwtresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\domain\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\domain\\entities\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7ECF5DB1-24DE-4137-9076-07D2E0C37500}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,285 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Program.cs",
-              "RelativeDocumentMoniker": "EComApplicationBackend\\Program.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Program.cs",
-              "RelativeToolTip": "EComApplicationBackend\\Program.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAB0AAABBAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EComApplicationBackend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wDEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T00:00:43.659Z",
+              "WhenOpened": "2024-12-02T12:20:06.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetUserByUsername.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\User\\Query\\GetUserByUsername.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
-              "RelativeToolTip": "App.Core\\App\\User\\Query\\GetUserByUsername.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBkAAABBAAAAAAAAAA==",
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "EComApplicationBackend\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:23:30.969Z",
+              "WhenOpened": "2024-12-02T12:20:12.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
-              "RelativeToolTip": "EComApplicationBackend\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwFkAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UpdateUserCommand.cs",
+              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T15:16:11.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetUserRoleQuery.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserRoleQuery.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\User\\Query\\GetUserRoleQuery.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserRoleQuery.cs",
-              "RelativeToolTip": "App.Core\\App\\User\\Query\\GetUserRoleQuery.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T09:58:58.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetStatesByCountryIdQuery.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\CountryCity\\Query\\GetStatesByCountryIdQuery.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\CountryCity\\Query\\GetStatesByCountryIdQuery.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\CountryCity\\Query\\GetStatesByCountryIdQuery.cs",
-              "RelativeToolTip": "App.Core\\App\\CountryCity\\Query\\GetStatesByCountryIdQuery.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowB8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T10:25:59.042Z"
+              "WhenOpened": "2024-12-02T12:09:38.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Domain\\Entities\\User.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCAAAAAoAAAAAAAAAA==",
+              "Title": "AddProductResponseDto.cs",
+              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\AddProductResponseDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\AddProductResponseDto.cs",
+              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\AddProductResponseDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\AddProductResponseDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T02:18:43.969Z"
+              "WhenOpened": "2024-12-02T12:04:41.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GetProductByIdQuery.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Query\\GetProductByIdQuery.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\Product\\Query\\GetProductByIdQuery.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Query\\GetProductByIdQuery.cs",
-              "RelativeToolTip": "App.Core\\App\\Product\\Query\\GetProductByIdQuery.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwCEAAAAcAAAAAAAAAA==",
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\ProductDto.cs",
+              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\ProductDto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T09:55:31.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "EComApplicationBackend\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowEwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T07:50:44.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DeleteProductCommand.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\DeleteProductCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\Product\\Command\\DeleteProductCommand.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\DeleteProductCommand.cs",
-              "RelativeToolTip": "App.Core\\App\\Product\\Command\\DeleteProductCommand.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwBYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T08:59:31.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AppDbContext.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\AppDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\AppDbContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T08:53:17.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddProductCommand.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\AddProductCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\Product\\Command\\AddProductCommand.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\AddProductCommand.cs",
-              "RelativeToolTip": "App.Core\\App\\Product\\Command\\AddProductCommand.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T07:51:27.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateUserCommand.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\CreateUserCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\CreateUserCommand.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\CreateUserCommand.cs",
-              "RelativeToolTip": "App.Core\\App\\User\\Command\\CreateUserCommand.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAtwBQAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T06:34:52.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Domain\\Entities\\Product.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T07:39:28.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChangePasswordCommand.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
-              "RelativeToolTip": "App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAIwBcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:59:02.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Services\\JwtService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Services\\JwtService.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Services\\JwtService.cs",
-              "RelativeToolTip": "Infrastructure\\Services\\JwtService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwB0AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:57:28.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ForgotPasswordCommand.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
-              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
-              "RelativeToolTip": "App.Core\\App\\User\\Command\\ForgotPasswordCommand.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAlwEsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T12:45:54.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ChangePasswordDto.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ChangePasswordDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\ChangePasswordDto.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ChangePasswordDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\ChangePasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T13:58:35.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ForgotPasswordDto.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ForgotPasswordDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\ForgotPasswordDto.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ForgotPasswordDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\ForgotPasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T12:44:57.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20241130071028_init.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Migrations\\20241130071028_init.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241130071028_init.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Migrations\\20241130071028_init.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20241130071028_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:10:29.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "JwtResponseDto.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\JwtResponseDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\JwtResponseDto.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\JwtResponseDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\JwtResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:03:36.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LoginResponseDto.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\LoginResponseDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\LoginResponseDto.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\LoginResponseDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\LoginResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T11:19:33.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Otp.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\Otp.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Otp.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\Otp.cs",
-              "RelativeToolTip": "Domain\\Entities\\Otp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T11:25:53.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "State.cs",
-              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\State.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\State.cs",
-              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Entities\\State.cs",
-              "RelativeToolTip": "Domain\\Entities\\State.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T04:56:15.008Z"
+              "WhenOpened": "2024-12-02T11:59:35.365Z",
+              "EditorCaption": ""
             }
           ]
         }

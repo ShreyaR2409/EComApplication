@@ -1,4 +1,5 @@
-﻿using App.Core.App.User.Command;
+﻿using App.Core.App.Product.Command;
+using App.Core.App.User.Command;
 using App.Core.App.User.Query;
 using App.Core.Models;
 using MediatR;
@@ -19,15 +20,43 @@ namespace EComApplicationBackend.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegisterUser(RegistrationDto registrationDto)
+        public async Task<IActionResult> RegisterUser([FromForm] RegistrationDto registrationDto)
         {
             var result = await _mediator.Send(new CreateUserCommand { Registration = registrationDto });
-            if(result == null)
+            if (result == null)
             {
                 return BadRequest("User Already Exists");
             }
+            return Ok(result);  
+        }
+
+        [HttpPut("Update-User/{id}")]
+        public async Task<IActionResult> UpdateProduct(int id, [FromBody] RegistrationDto RegistrationDto)
+        {
+            if (id <= 0)
+            {
+                return BadRequest("Invalid Product ID.");
+            }
+
+            if (RegistrationDto == null)
+            {
+                return BadRequest("Product data cannot be null.");
+            }
+
+            var result = await _mediator.Send(new UpdateUserCommand
+            {
+                UserId = id,
+                Registration = RegistrationDto
+            });
+
+            if (result == null)
+            {
+                return NotFound("Product not found or update failed.");
+            }
+
             return Ok(result);
         }
+
 
         [HttpPost("Login")]
         public async Task<IActionResult> LoginUser(LoginDto loginDto)

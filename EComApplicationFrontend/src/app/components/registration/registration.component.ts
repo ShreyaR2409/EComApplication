@@ -11,10 +11,12 @@ import { Router,RouterLink } from '@angular/router';
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
+
 export class RegistrationComponent implements OnInit{
   countries: any[] = [];
   states: any[] = [];
   roles: any[] = [];
+  selectedFile: File | null = null;
   constructor(private router: Router, private authService : AuthService) {}
 
   RegistrationForm = new FormGroup({
@@ -45,7 +47,9 @@ export class RegistrationComponent implements OnInit{
   onFileSelected(event: any) {
     const file = event.target.files[0];
     if (file) {
+      this.selectedFile = file;
       this.RegistrationForm.patchValue({ profileimage: file });
+      this.RegistrationForm.get('profileimage')?.updateValueAndValidity();
     }
   }
 
@@ -85,12 +89,41 @@ export class RegistrationComponent implements OnInit{
     );
   }
 
+  // RegistrationFormSubmit(): void {
+  //   if (this.RegistrationForm.valid) {
+  //     const newUser = this.RegistrationForm.value;
+  //     this.authService.registerUser(newUser).subscribe({
+  //       next: (res) => {
+  //         console.log('Registration Successful', res);
+  //       },
+  //       error: (err) => {
+  //         console.error('Registration Failed', err);
+  //       },
+  //     });
+  //   } else {
+  //     console.error('Form is invalid');
+  //   }
+  // }
+
   RegistrationFormSubmit(): void {
-    if (this.RegistrationForm.valid) {
-      const newUser = this.RegistrationForm.value;
-      this.authService.registerUser(newUser).subscribe({
+    if (this.RegistrationForm.valid && this.selectedFile) {
+      const formData = new FormData();
+      formData.append('firstname', this.RegistrationForm.get('firstname')?.value || '');
+      formData.append('lastname', this.RegistrationForm.get('lastname')?.value || '');
+      formData.append('email', this.RegistrationForm.get('email')?.value || '');
+      formData.append('roleid', this.RegistrationForm.get('roleid')?.value || '');
+      formData.append('dob', this.RegistrationForm.get('dob')?.value || '');
+      formData.append('mobilenumber', this.RegistrationForm.get('mobilenumber')?.value || '');
+      formData.append('address', this.RegistrationForm.get('address')?.value || '');
+      formData.append('zipcode', this.RegistrationForm.get('zipcode')?.value || '');
+      formData.append('countryid', this.RegistrationForm.get('countryid')?.value || '');
+      formData.append('stateid', this.RegistrationForm.get('stateid')?.value || '');
+      formData.append('profileimage', this.selectedFile);
+
+      this.authService.registerUser(formData).subscribe({
         next: (res) => {
           console.log('Registration Successful', res);
+          this.router.navigate(['/success-page']); // Navigate to success page
         },
         error: (err) => {
           console.error('Registration Failed', err);
@@ -100,4 +133,5 @@ export class RegistrationComponent implements OnInit{
       console.error('Form is invalid');
     }
   }
+
 }

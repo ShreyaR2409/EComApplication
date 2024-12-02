@@ -16,12 +16,12 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  public registerUser(user: any): Observable<any> {
-    return this.http.post<any>(`${this.url}`, user);
+  public registerUser(formData: FormData): Observable<any> {
+    return this.http.post<any>(`${this.url}`, formData);
   }
 
   public loginUser(user: any): Observable<any> {
-    return this.http.post<any>(`${this.url}/login`, user);
+    return this.http.post<any>(`${this.url}/Login`, user);
   }
 
   public verifyOtp(otp: any): Observable<any> {
@@ -71,12 +71,12 @@ export class AuthService {
     if (token) {
       const decodedToken = this.decodeToken(token);
       const userData = {
-        email: decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
+        username: decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'],
         role: decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'],
         id: decodedToken['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'],
       };
       this.currentUserSubject.next(userData);
-      sessionStorage.setItem('email', userData.email || '');
+      sessionStorage.setItem('username', userData.username || '');
       sessionStorage.setItem('role', userData.role || '');
       sessionStorage.setItem('id', userData.id || '');
     }

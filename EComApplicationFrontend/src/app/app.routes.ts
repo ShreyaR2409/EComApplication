@@ -4,6 +4,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent} from './components/profile/profile.component';
 import { AuthGuard } from './guard/auth.guard';
+import { ProductMasterComponent } from './components/product-master/product-master.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +23,10 @@ export const routes: Routes = [
     {
         path : 'profile',
         component: ProfileComponent
+    },
+    {
+        path : 'product-master',
+        component: ProductMasterComponent
     },
     {
         path: '',

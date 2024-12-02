@@ -12,11 +12,12 @@ export class ProfileComponent {
   username : string;
   user: any;
   constructor(private authService : AuthService) {
-    this.username = sessionStorage.getItem("email") ?? '';
+    this.username = sessionStorage.getItem("username") ?? '';
     this.getUser();
   }
 
   getUser(){
+    console.log(this.username)
     this.authService.getUserByUsername(this.username).subscribe((data) => {
       this.user = data;
       console.log(this.user)

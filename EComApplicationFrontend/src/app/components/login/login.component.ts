@@ -21,14 +21,14 @@ export class LoginComponent {
   });
 
   otpForm = new FormGroup({
-    otp: new FormControl('', [Validators.required]), // Corrected
+    otp: new FormControl('', [Validators.required]), 
   });
 
   forgotPasswordForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
   });
 
-  private storedUsername: string | null = null; // Variable to store username
+  private storedUsername: string | null = null; 
 
 
   // Email getter

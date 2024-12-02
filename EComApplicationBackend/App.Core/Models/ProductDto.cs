@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace App.Core.Models
     {
         public string productname { get; set; }
         public string productcode { get; set; }
-        public string productimg { get; set; }
+        public IFormFile productimg { get; set; }
         public string category { get; set; }
         public string brand { get; set; }
         public float sellingprice { get; set; }

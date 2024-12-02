@@ -32,3 +32,15 @@ D:\Angular\ECommerce\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.dll
 D:\Angular\ECommerce\EComApplicationBackend\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\Angular\ECommerce\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.pdb
 D:\Angular\ECommerce\EComApplicationBackend\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\bin\Debug\net8.0\Domain.dll
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\bin\Debug\net8.0\Domain.pdb
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.dll
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\Domain.pdb
+C:\EComApplication\EComApplication\EComApplicationBackend\Domain\obj\Debug\net8.0\ref\Domain.dll

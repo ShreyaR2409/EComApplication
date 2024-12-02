@@ -43,7 +43,7 @@ namespace App.Core.App.User.Command
 
             if (otpEntity == null)
             {
-                return null; // Invalid OTP
+                return null; 
             }
 
             // Generate JWT token for the user

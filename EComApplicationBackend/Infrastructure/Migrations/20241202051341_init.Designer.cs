@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241130071028_init")]
+    [Migration("20241202051341_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -58,6 +58,54 @@ namespace Infrastructure.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Otps");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Product", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
+                    b.Property<string>("brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("isDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("productcode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("productimg")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("productname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("purchasedate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("purchaseprice")
+                        .HasColumnType("real");
+
+                    b.Property<float>("sellingprice")
+                        .HasColumnType("real");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Domain.Entities.Role", b =>

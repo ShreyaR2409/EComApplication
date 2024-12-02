@@ -79,7 +79,7 @@
       <div class="row mb-3">
         <div class="col">
           <label for="profileimage" class="form-label">Profile Image</label>
-          <input type="file" class="form-control" id="profileimage" formControlName="profileimage">
+          <input type="file" class="form-control" id="profileimage" formControlName="profileimage" (change)="onFileSelected($event)">
           <div class="form-text text-danger" *ngIf="RegistrationForm.get('profileimage')?.errors?.['required'] && RegistrationForm.get('profileimage')?.touched">
             Profile Image is required
           </div>

@@ -5361,19 +5361,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\shreyaraut\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend.csproj",
+      "projectUniqueName": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend.csproj",
       "projectName": "EComApplicationBackend",
-      "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\obj\\",
+      "projectPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\EComApplicationBackend.csproj",
+      "packagesPath": "C:\\Users\\shreyaraut\\.nuget\\packages\\",
+      "outputPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shreyaraut\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5388,11 +5388,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
-              "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj"
+            "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
+              "projectPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App.Core.csproj"
             },
-            "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj"
+            "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
