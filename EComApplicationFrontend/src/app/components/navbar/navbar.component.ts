@@ -1,15 +1,15 @@
 import { Component, OnInit  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../services/authServices/auth.service';
-
+import { RouterLink } from '@angular/router';
 @Component({
-  selector: 'app-home',
+  selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  imports: [CommonModule, RouterLink],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class HomeComponent{
+export class NavbarComponent{
   userRole: string | null = null;
   userName : string ;
   isAdmin : boolean = true;
@@ -20,16 +20,18 @@ export class HomeComponent{
     this.userRole = sessionStorage.getItem("role");
     this.userName = sessionStorage.getItem("username") ?? '';
     this.getProfile();
+    this.isAdminFn();
   }
 
   isAdminFn(): boolean {
-    if(this.userRole ==  "1"){
+    console.log("Role",this.userRole )
+    if (this.userRole === "Admin") {
       this.isAdmin = true;
       return true;
-    } 
-    else
-    this.isAdmin = false;
-    return false;
+    } else {
+      this.isAdmin = false;
+      return false;
+    }
   }
 
   getProfile(){
@@ -42,5 +44,8 @@ export class HomeComponent{
     })
   }
 
+  Logout() {
+    this.authService.logoutUser();
+  }
 
 }

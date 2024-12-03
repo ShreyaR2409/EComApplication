@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
-import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent} from './components/profile/profile.component';
 import { AuthGuard } from './guard/auth.guard';
 import { ProductMasterComponent } from './components/product-master/product-master.component';
-
+import {ChangePasswordComponent} from './components/change-password/change-password.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 export const routes: Routes = [
     {
         path: 'login',
@@ -17,7 +18,7 @@ export const routes: Routes = [
     },
     {
         path:'home',
-        component: HomeComponent,
+        component: NavbarComponent,
         canActivate: [AuthGuard]
     },
     {
@@ -27,6 +28,15 @@ export const routes: Routes = [
     {
         path : 'product-master',
         component: ProductMasterComponent
+    },
+    {
+        path : 'change-password',
+        component: ChangePasswordComponent
+    
+    },
+    {
+        path : 'product-list',
+        component : ProductListComponent
     },
     {
         path: '',

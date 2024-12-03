@@ -137,9 +137,49 @@
         "IsRequired": true
       },
       {
-        "Name": "productDto",
-        "Type": "App.Core.Models.ProductDto",
-        "IsRequired": true
+        "Name": "productname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "productcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "productimg",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sellingprice",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "purchaseprice",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "purchasedate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Stock",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -282,9 +322,59 @@
         "IsRequired": true
       },
       {
-        "Name": "RegistrationDto",
-        "Type": "App.Core.Models.RegistrationDto",
-        "IsRequired": true
+        "Name": "firstname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lastname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dob",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "mobilenumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "profileimage",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zipcode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "countryid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "stateid",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

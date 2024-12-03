@@ -1,60 +1,88 @@
 {
   "Files": [
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\05a53d17-4619-4044-bb1e-10bae14cdad8_Screenshot (15).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\05a53d17-4619-4044-bb1e-10bae14cdad8_Screenshot (15).png",
       "PackagePath": "staticwebassets\\uploads\\05a53d17-4619-4044-bb1e-10bae14cdad8_Screenshot (15).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\09ace16f-828b-43df-973a-fb47bcab2b8c_Screenshot (8).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\08b4e818-de7e-48d4-8296-4ac16f0b4651_WIN_20240625_10_49_35_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\08b4e818-de7e-48d4-8296-4ac16f0b4651_WIN_20240625_10_49_35_Pro.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\09ace16f-828b-43df-973a-fb47bcab2b8c_Screenshot (8).png",
       "PackagePath": "staticwebassets\\uploads\\09ace16f-828b-43df-973a-fb47bcab2b8c_Screenshot (8).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\0b6a5f1f-b273-4b09-99bb-a62c60b5681f_user.png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\0b6a5f1f-b273-4b09-99bb-a62c60b5681f_user.png",
       "PackagePath": "staticwebassets\\uploads\\0b6a5f1f-b273-4b09-99bb-a62c60b5681f_user.png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\2df4417a-919f-4e80-b682-62e1d0cb254c_user.png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\19bbbf47-b45e-4c38-bc5d-ccbe094d4f2e_WIN_20240115_11_40_15_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\19bbbf47-b45e-4c38-bc5d-ccbe094d4f2e_WIN_20240115_11_40_15_Pro.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\2df4417a-919f-4e80-b682-62e1d0cb254c_user.png",
       "PackagePath": "staticwebassets\\uploads\\2df4417a-919f-4e80-b682-62e1d0cb254c_user.png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\57436cf4-181b-4e21-acf2-bf19a17854af_Screenshot (5).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\4a669a66-f52c-4ef0-a5c9-012c49da4011_ParleG.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4a669a66-f52c-4ef0-a5c9-012c49da4011_ParleG.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\57436cf4-181b-4e21-acf2-bf19a17854af_Screenshot (5).png",
       "PackagePath": "staticwebassets\\uploads\\57436cf4-181b-4e21-acf2-bf19a17854af_Screenshot (5).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\864d2659-5443-4b3c-8c66-85ac52ad1ee3_ParleG.jpg",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\6822eb85-a137-40e7-a9d0-6b95a62a55e8_img2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6822eb85-a137-40e7-a9d0-6b95a62a55e8_img2.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\79c6c878-7025-46b1-9374-4ff024f92749_ParleG.jpg",
+      "PackagePath": "staticwebassets\\uploads\\79c6c878-7025-46b1-9374-4ff024f92749_ParleG.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\864d2659-5443-4b3c-8c66-85ac52ad1ee3_ParleG.jpg",
       "PackagePath": "staticwebassets\\uploads\\864d2659-5443-4b3c-8c66-85ac52ad1ee3_ParleG.jpg"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\8f68e1af-080c-491e-a0bc-7444c55d3b49_Screenshot (2).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\8f68e1af-080c-491e-a0bc-7444c55d3b49_Screenshot (2).png",
       "PackagePath": "staticwebassets\\uploads\\8f68e1af-080c-491e-a0bc-7444c55d3b49_Screenshot (2).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\a5222309-3ce7-4a5d-91ab-fa9b6c78ae73_Screenshot (13).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\a5222309-3ce7-4a5d-91ab-fa9b6c78ae73_Screenshot (13).png",
       "PackagePath": "staticwebassets\\uploads\\a5222309-3ce7-4a5d-91ab-fa9b6c78ae73_Screenshot (13).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\b9702e00-9a20-474c-a0ba-86f665a9e715_Screenshot (12).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\b9702e00-9a20-474c-a0ba-86f665a9e715_Screenshot (12).png",
       "PackagePath": "staticwebassets\\uploads\\b9702e00-9a20-474c-a0ba-86f665a9e715_Screenshot (12).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\bb27c1a4-b44d-4a46-a8bb-ed03fc12dec1_Screenshot (15).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\bb27c1a4-b44d-4a46-a8bb-ed03fc12dec1_Screenshot (15).png",
       "PackagePath": "staticwebassets\\uploads\\bb27c1a4-b44d-4a46-a8bb-ed03fc12dec1_Screenshot (15).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\c766880c-4eae-407f-8713-4628786f49d1_Screenshot (15).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\c766880c-4eae-407f-8713-4628786f49d1_Screenshot (15).png",
       "PackagePath": "staticwebassets\\uploads\\c766880c-4eae-407f-8713-4628786f49d1_Screenshot (15).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\d2056aea-61a0-47ea-968c-3a843ea75557_Screenshot (8).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\d136d0f0-d37b-4a44-acbc-c4381a7807a3_ParleG.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d136d0f0-d37b-4a44-acbc-c4381a7807a3_ParleG.jpg"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\d2056aea-61a0-47ea-968c-3a843ea75557_Screenshot (8).png",
       "PackagePath": "staticwebassets\\uploads\\d2056aea-61a0-47ea-968c-3a843ea75557_Screenshot (8).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\ddb18609-5481-4d20-b1f6-cb1b566ba20e_Screenshot (15).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\ddb18609-5481-4d20-b1f6-cb1b566ba20e_Screenshot (15).png",
       "PackagePath": "staticwebassets\\uploads\\ddb18609-5481-4d20-b1f6-cb1b566ba20e_Screenshot (15).png"
     },
     {
-      "Id": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\e19eb4b3-a788-4922-b4bc-9a6c659ca57d_Screenshot (6).png",
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\e19eb4b3-a788-4922-b4bc-9a6c659ca57d_Screenshot (6).png",
       "PackagePath": "staticwebassets\\uploads\\e19eb4b3-a788-4922-b4bc-9a6c659ca57d_Screenshot (6).png"
+    },
+    {
+      "Id": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\wwwroot\\uploads\\f91b1f55-8696-403f-923d-fc2fe9ac17f0_WIN_20240115_11_40_15_Pro.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f91b1f55-8696-403f-923d-fc2fe9ac17f0_WIN_20240115_11_40_15_Pro.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EComApplicationBackend.Microsoft.AspNetCore.StaticWebAssets.props",

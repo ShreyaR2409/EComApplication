@@ -1,4 +1,90 @@
-<p>profile works!</p>
-{{user | json}}
+<app-navbar></app-navbar>
 
-<button type="button" class="btn btn-danger" (click)="Logout()"> Logout </button>
+<div class="profile-container">
+    <h2 class="profile-heading">User Profile</h2>
+    <div class="profile-card">
+      <img
+        *ngIf="user.profileimage; else defaultImage"
+        [src]="'https://localhost:7066' + user.profileimage"
+        alt="Profile Picture"
+        class="profile-image"
+      />
+      <ng-template #defaultImage>
+        <img src="assets/default-profile.png" alt="Default Profile" class="profile-image" />
+      </ng-template>
+  
+      <div>
+        <h3>{{ user.firstname }} {{ user.lastname }}</h3>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Mobile:</strong> {{ user.mobilenumber }}</p>
+        <p><strong>Address:</strong> {{ user.address }}</p>
+  
+        <button class="btn btn-primary" (click)="toggleEditMode()">Edit Profile</button>
+        <button class="btn btn-danger" (click)="Logout()">Logout</button>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editProfileModal"
+      tabindex="-1"
+      aria-labelledby="editProfileModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editProfileModalLabel">Edit Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form (ngSubmit)="updateProfile()">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input [(ngModel)]="user.firstname" name="firstname" class="form-control" required />
+              </div>
+  
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input [(ngModel)]="user.lastname" name="lastname" class="form-control" required />
+              </div>
+  
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input [(ngModel)]="user.email" name="email" class="form-control" required />
+              </div>
+  
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input [(ngModel)]="user.dob" name="dob" class="form-control" type="date" required />
+              </div>
+  
+              <div class="form-group">
+                <label for="mobilenumber">Mobile Number</label>
+                <input [(ngModel)]="user.mobilenumber" name="mobilenumber" class="form-control" />
+              </div>
+  
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input [(ngModel)]="user.address" name="address" class="form-control" />
+              </div>
+  
+              <div class="form-group">
+                <label for="profileimage">Profile Image</label>
+                <input type="file" (change)="onFileChange($event)" accept="image/*" />
+              </div>
+  
+              <div class="modal-footer">
+                <button class="btn btn-success" type="submit">Save Changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

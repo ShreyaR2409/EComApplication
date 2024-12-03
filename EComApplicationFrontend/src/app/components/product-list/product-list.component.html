@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+    <h2>Products</h2>
+    <div class="row">
+      <div *ngFor="let product of products" class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img
+            [src]="'https://localhost:7066'+ product.productimg || 'assets/default-product.jpg'"
+            class="card-img-top"
+            alt="Product Image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">
+              <strong>Brand:</strong> {{ product.brand }}
+            </p>
+            <p class="card-text">
+              <strong>Price:</strong> {{ product.price | currency }}
+            </p>
+            <button
+              class="btn btn-primary"
+              [disabled]="product.stock <= 0"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

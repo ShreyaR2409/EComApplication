@@ -3,6 +3,7 @@ using App.Core.App.User.Command;
 using App.Core.App.User.Query;
 using App.Core.Models;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,16 +32,16 @@ namespace EComApplicationBackend.Controllers
         }
 
         [HttpPut("Update-User/{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, [FromBody] RegistrationDto RegistrationDto)
+        public async Task<IActionResult> UpdateProduct(int id, [FromForm] RegistrationDto RegistrationDto)
         {
             if (id <= 0)
             {
-                return BadRequest("Invalid Product ID.");
+                return BadRequest("Invalid User ID.");
             }
 
             if (RegistrationDto == null)
             {
-                return BadRequest("Product data cannot be null.");
+                return BadRequest("User data cannot be null.");
             }
 
             var result = await _mediator.Send(new UpdateUserCommand
@@ -51,7 +52,7 @@ namespace EComApplicationBackend.Controllers
 
             if (result == null)
             {
-                return NotFound("Product not found or update failed.");
+                return NotFound("User not found or update failed.");
             }
 
             return Ok(result);
@@ -91,6 +92,7 @@ namespace EComApplicationBackend.Controllers
             return Ok("A new password has been sent to your email.");
         }
 
+        [Authorize]
         [HttpPost("ChangePassword")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto changePasswordDto)
         {

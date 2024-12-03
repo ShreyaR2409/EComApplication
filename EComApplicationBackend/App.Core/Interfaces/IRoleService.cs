@@ -8,7 +8,7 @@ namespace App.Core.Interfaces
 {
     public interface IRoleService
     {
-        Task<string?> GetRoleNameByIdAsync(string roleId);
+        Task<string?> GetRoleNameByIdAsync(int roleId);
 
     }
 }

@@ -71,26 +71,6 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = jwtIssuer,
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
-    options.Events = new JwtBearerEvents
-    {
-        OnTokenValidated = async context =>
-        {
-            var claimsIdentity = context.Principal?.Identity as ClaimsIdentity;
-            var roleClaim = claimsIdentity?.FindFirst("http://schemas.microsoft.com/ws/2008/06/identity/claims/role");
-
-            if (roleClaim != null)
-            {
-                var roleId = roleClaim.Value;
-                var roleService = context.HttpContext.RequestServices.GetRequiredService<IRoleService>();
-                var roleName = await roleService.GetRoleNameByIdAsync(roleId);
-
-                if (!string.IsNullOrEmpty(roleName))
-                {
-                    claimsIdentity.AddClaim(new Claim(ClaimTypes.Role, roleName));
-                }
-            }
-        }
-    };
 });
 
 builder.Services.AddCors(options =>

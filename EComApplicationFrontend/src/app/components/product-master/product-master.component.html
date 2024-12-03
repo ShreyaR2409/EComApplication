@@ -1,31 +1,172 @@
-<app-home></app-home>
+<app-navbar></app-navbar>
 
 <div class="container">
-    <button type="button" class="btn btn-primary">Add Product</button>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Product Name</th>
-                <th>Product Code</th>
-                <th>Category</th>
-                <th>Brand</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody *ngFor="let product of products | paginate: { itemsPerPage: 5 , currentPage: row}">
-            <tr>
-                <td>{{ product.productname }}</td>
-                <td>{{ product.productcode }}</td>
-                <td>{{ product.category }}</td>
-                <td>{{ product.brand }}</td>
-                <td>
-                    <button class="btn btn-primary">View</button>&nbsp; &nbsp;
-                    <button class="btn btn-primary">Edit</button>&nbsp; &nbsp;
-                    <button class="btn btn-danger">Delete</button>
-                </td>
-            </tr>
-        </tbody>
-        <pagination-controls (pageChange)="row = $event"></pagination-controls>
-    </table>
+  <button type="button" class="btn btn-primary" (click)="showAddProductModal()">Add Product</button>
 
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Product Code</th>
+        <th>Category</th>
+        <th>Brand</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let product of products | paginate: { itemsPerPage: 5, currentPage: row }">
+      <tr>
+        <td>{{ product.productname }}</td>
+        <td>{{ product.productcode }}</td>
+        <td>{{ product.category }}</td>
+        <td>{{ product.brand }}</td>
+        <td>
+          <button class="btn btn-primary" (click)="viewProductDetails(product.id)">View</button>
+          <!-- <button class="btn btn-primary" (click)="showEditProductModal(product.id)">Edit</button> -->
+          <button class="btn btn-danger" (click)="confirmDeleteProduct(product.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <pagination-controls (pageChange)="row = $event"></pagination-controls>
 </div>
+
+<!-- Add Product Modal -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" [(ngModel)]="newProduct.productname" name="productname" />
+          </div>
+          <div class="mb-3">
+            <label for="productCode" class="form-label">Product Code</label>
+            <input type="text" class="form-control" [(ngModel)]="newProduct.productcode" name="productcode" />
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <input type="text" class="form-control" [(ngModel)]="newProduct.category" name="category" />
+          </div>
+          <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" [(ngModel)]="newProduct.brand" name="brand" />
+          </div>
+          <div class="mb-3">
+            <label for="sellingPrice" class="form-label">Selling Price</label>
+            <input type="number" class="form-control" [(ngModel)]="newProduct.sellingprice" name="sellingprice" />
+          </div>
+          <div class="mb-3">
+            <label for="purchasePrice" class="form-label">Purchase Price</label>
+            <input type="number" class="form-control" [(ngModel)]="newProduct.purchaseprice" name="purchaseprice" />
+          </div>
+          <div class="mb-3">
+            <label for="purchaseDate" class="form-label">Purchase Date</label>
+            <input type="date" class="form-control" [(ngModel)]="newProduct.purchasedate" name="purchasedate" />
+          </div>
+          <div class="mb-3">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="number" class="form-control" [(ngModel)]="newProduct.stock" name="stock" />
+          </div>
+          <div class="mb-3">
+            <label for="productImg" class="form-label">Product Image</label>
+            <input type="file" class="form-control" (change)="onFileChange($event)" id="productImg" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="addProduct()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- View Product Modal -->
+<div class="modal fade" id="viewProductModal" tabindex="-1" aria-labelledby="viewProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewProductModalLabel">Product Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+        </div>
+        <div class="modal-body">
+          <div *ngIf="selectedProduct">
+            <h3>{{ selectedProduct.productname }}</h3>
+            <p><strong>Product Code:</strong> {{ selectedProduct.productcode }}</p>
+            <p><strong>Category:</strong> {{ selectedProduct.category }}</p>
+            <p><strong>Brand:</strong> {{ selectedProduct.brand }}</p>
+            <p><strong>Price:</strong> ${{ selectedProduct.sellingprice }}</p>
+            <p><strong>Stock:</strong> {{ selectedProduct.stock }} items available</p>
+            <div *ngIf="selectedProduct.productimg">
+              <img [src]="'https://localhost:7066' + selectedProduct.productimg" alt="{{ selectedProduct.productname }}" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModalView()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Product Modal -->
+<!-- <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="productname" class="form-label">Product Name</label>
+              <input type="text" class="form-control" id="productname" [(ngModel)]="selectedProduct.productname" name="productname" />
+            </div>
+            <div class="mb-3">
+              <label for="productcode" class="form-label">Product Code</label>
+              <input type="text" class="form-control" id="productcode" [(ngModel)]="selectedProduct.productcode" name="productcode" />
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Category</label>
+              <input type="text" class="form-control" id="category" [(ngModel)]="selectedProduct.category" name="category" />
+            </div>
+            <div class="mb-3">
+              <label for="brand" class="form-label">Brand</label>
+              <input type="text" class="form-control" id="brand" [(ngModel)]="selectedProduct.brand" name="brand" />
+            </div>
+            <div class="mb-3">
+              <label for="sellingprice" class="form-label">Selling Price</label>
+              <input type="number" class="form-control" id="sellingprice" [(ngModel)]="selectedProduct.sellingprice" name="sellingprice" />
+            </div>
+            <div class="mb-3">
+              <label for="stock" class="form-label">Stock</label>
+              <input type="number" class="form-control" id="stock" [(ngModel)]="selectedProduct.stock" name="stock" />
+            </div>
+            <div class="mb-3">
+              <label for="productimg" class="form-label">Product Image</label>
+              <input type="file" class="form-control" id="productimg" (change)="onFileChange($event)" />
+            </div>
+            <div *ngIf="selectedProduct.productimg" class="mb-3">
+              <h5>Current Product Image</h5>
+              <img [src]="'https://localhost:7066' + selectedProduct.productimg" alt="{{ selectedProduct.productname }}" class="img-fluid" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModalEdit()">Close</button>
+          <button type="button" class="btn btn-primary" (click)="editProduct()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->

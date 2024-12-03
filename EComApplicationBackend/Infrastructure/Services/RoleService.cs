@@ -15,12 +15,12 @@ namespace Infrastructure.Services
         {
             _context = context;
         }
-        public async Task<string?> GetRoleNameByIdAsync(string roleId)
+        public async Task<string?> GetRoleNameByIdAsync(int roleId)
         {
             var role = await _context.Roles
-                .Where(r => r.id == int.Parse(roleId))
-                .Select(r => r.roletype)
-                .FirstOrDefaultAsync();
+                                     .Where(r => r.id == roleId)
+                                     .Select(r => r.roletype)
+                                     .FirstOrDefaultAsync();
 
             return role;
         }

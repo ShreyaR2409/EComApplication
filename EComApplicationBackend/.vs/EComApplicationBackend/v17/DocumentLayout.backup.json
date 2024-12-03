@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\",
+  "WorkspaceRootPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\app\\user\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\changepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\product\\command\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\product\\command\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\models\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\interfaces\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,67 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "EComApplicationBackend\\Controllers\\UserController.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA4wDEAAAAPAAAAAAAAAA==",
+              "Title": "ChangePasswordCommand.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\User\\Command\\ChangePasswordCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T12:20:06.8Z",
+              "WhenOpened": "2024-12-03T01:49:46.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs*",
-              "RelativeToolTip": "EComApplicationBackend\\Controllers\\ProductController.cs*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowCYAAABUAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "EComApplicationBackend\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwF4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T12:20:12.15Z",
+              "WhenOpened": "2024-12-03T01:49:12.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "EComApplicationBackend\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAD4vzcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T00:27:16.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UpdateProductCommand.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\UpdateProductCommand.cs",
+              "RelativeDocumentMoniker": "App.Core\\App\\Product\\Command\\UpdateProductCommand.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Product\\Command\\UpdateProductCommand.cs",
+              "RelativeToolTip": "App.Core\\App\\Product\\Command\\UpdateProductCommand.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAD4vzoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T00:10:52.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UpdateUserCommand.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
               "RelativeDocumentMoniker": "App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
               "RelativeToolTip": "App.Core\\App\\User\\Command\\UpdateUserCommand.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T12:09:38.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddProductResponseDto.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\AddProductResponseDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\AddProductResponseDto.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\AddProductResponseDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\AddProductResponseDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
+              "RelativeDocumentMoniker": "App.Core\\Models\\ProductDto.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
+              "RelativeToolTip": "App.Core\\Models\\ProductDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T12:04:41.697Z",
+              "WhenOpened": "2024-12-02T11:59:35.365Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
-              "RelativeDocumentMoniker": "App.Core\\Models\\ProductDto.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\ProductDto.cs",
-              "RelativeToolTip": "App.Core\\Models\\ProductDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Interfaces\\IJwtService.cs",
+              "RelativeDocumentMoniker": "App.Core\\Interfaces\\IJwtService.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Interfaces\\IJwtService.cs",
+              "RelativeToolTip": "App.Core\\Interfaces\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T11:59:35.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T14:31:04.699Z"
             }
           ]
         }

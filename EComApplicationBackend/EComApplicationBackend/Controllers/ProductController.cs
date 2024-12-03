@@ -34,9 +34,8 @@ namespace EComApplicationBackend.Controllers
             return Ok(result);
         }
         //[Authorize(Roles = "Admin")]
-
         [HttpPut("Update-Product/{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, [FromBody] ProductDto productDto)
+        public async Task<IActionResult> UpdateProduct(int id, [FromForm] ProductDto productDto)
         {
             if (id <= 0)
             {
@@ -59,7 +58,7 @@ namespace EComApplicationBackend.Controllers
                 return NotFound("Product not found or update failed.");
             }
 
-            return Ok(result);
+            return Ok("Product updated successfully.");
         }
         //[Authorize(Roles = "Admin")]
 

@@ -21,13 +21,13 @@ namespace Infrastructure.Services
             _configuration = configuration;
         }
 
-        public string GenerateToken(User user)
+        public string GenerateToken(User user, string roleType)
         {
             var claims = new[]
             {
             new Claim(ClaimTypes.NameIdentifier, user.id.ToString()),
             new Claim(ClaimTypes.Name, user.username),
-            new Claim(ClaimTypes.Role, user.roleid.ToString())  
+        new Claim(ClaimTypes.Role, roleType) 
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));

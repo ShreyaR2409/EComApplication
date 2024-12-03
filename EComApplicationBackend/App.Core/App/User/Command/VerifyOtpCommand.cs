@@ -46,10 +46,18 @@ namespace App.Core.App.User.Command
                 return null; 
             }
 
+            var role = await _appDbContext.Set<Domain.Entities.Role>()
+        .FirstOrDefaultAsync(r => r.id == user.roleid);
+
+            if (role == null)
+            {
+                return null; // Role not found
+            }
+
             // Generate JWT token for the user
             return new JwtResponseDto
             {
-                Token = _jwtService.GenerateToken(user)
+                Token = _jwtService.GenerateToken(user, role.roletype)
             };
         }
 

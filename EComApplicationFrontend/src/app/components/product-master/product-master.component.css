@@ -5,3 +5,32 @@
 .container{
     margin-top: 5%;
 }
+
+/* product-master.component.css */
+
+/* Style for the modal body */
+.modal-body {
+    padding: 20px;
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Style the product details */
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  

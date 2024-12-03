@@ -20,9 +20,27 @@ export class AuthService {
     return this.http.post<any>(`${this.url}`, formData);
   }
 
+  // public loginUser(user: any): Observable<any> {
+  //   return this.http.post<any>(`${this.url}/Login`, user);
+  // }
+
   public loginUser(user: any): Observable<any> {
-    return this.http.post<any>(`${this.url}/Login`, user);
+    return this.http.post<any>(`${this.url}/Login`, user).pipe(
+      tap((response) => {
+        if (response && response.token) {
+          sessionStorage.setItem('authToken', response.token);
+          this.loadCurrentUser(); // Load current user info and role
+          this.redirectUserBasedOnRole(); // Redirect based on role
+        }
+      })
+    );
   }
+
+
+  public updateUser(userId: number, userData: FormData): Observable<any> {
+    return this.http.put(`${this.url}/Update-User/${userId}`, userData);
+  }
+  
 
   public verifyOtp(otp: any): Observable<any> {
     return this.http.post<any>(`${this.url}/VerifyOtp`, otp).pipe(
@@ -41,6 +59,10 @@ export class AuthService {
 
   public forgotPassword(email:any):Observable<any>{
     return this.http.post<any>(`${this.url}/ForgotPassword`, email)
+  }
+
+  public changePassword(requestBody: { userId: string, changePasswordDto: { newPassword: string } }): Observable<any> {
+    return this.http.post(`${this.url}/ChangePassword`, requestBody);
   }
 
   public getAllCountries(): Observable<any[]> {
@@ -79,6 +101,18 @@ export class AuthService {
       sessionStorage.setItem('username', userData.username || '');
       sessionStorage.setItem('role', userData.role || '');
       sessionStorage.setItem('id', userData.id || '');
+    }
+  }
+
+  private redirectUserBasedOnRole(): void {
+    const role = sessionStorage.getItem('role');
+
+    if (role === 'admin') {
+      this.router.navigate(['/product-master']);
+    } else if (role === 'user') {
+      this.router.navigate(['/product-list']);
+    } else {
+      this.router.navigate(['/unauthorized']); // Optional: handle unauthorized roles
     }
   }
 

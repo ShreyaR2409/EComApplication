@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand">EComApplication</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <!-- Admin-Only Link -->
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link" routerLink="/product-master">Products Master</a>
+        </li>
+        <!-- User-Only Link -->
+        <li class="nav-item" *ngIf="!isAdmin">
+          <a class="nav-link" routerLink="/product-list">Products</a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center">
+        <a class="nav-link" routerLink="/cart" *ngIf="!isAdmin">Cart</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Profile Image with Dropdown -->
+        <div class="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              [src]="profileimg"
+              alt="Profile Image"
+              class="rounded-circle"
+              width="40"
+              height="40"
+            />
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+            <li><a class="dropdown-item" routerLink="/change-password">Change Password</a></li>
+            <li><a class="dropdown-item" (click)="Logout()">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
