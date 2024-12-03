@@ -13,6 +13,8 @@ import * as bootstrap from 'bootstrap';
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
+  isLoading: boolean = false; 
+
   constructor(private router: Router, private authService : AuthService) {}
 
   loginForm = new FormGroup({
@@ -31,24 +33,23 @@ export class LoginComponent {
   private storedUsername: string | null = null; 
 
 
-  // Email getter
   get Email(): FormControl {
     return this.loginForm.get('username') as FormControl;
   }
-
-  // Login Submitted
+ 
   loginSubmitted() {
     if (this.loginForm.valid) {
       const user = this.loginForm.value;
-  
+   this.isLoading = true;
       this.authService.loginUser(user).subscribe({
         next: (res) => {
+          this.isLoading = false;
           console.log('Login form submitted', res);
   
           if (res.status === 'Failure') {
             alert("Invalid Username or Password");
           } else {
-            // Show OTP modal if login is successful
+            
             this.storedUsername = user.username || null;
             const otpModalElement = document.getElementById('otpModal');
             if (otpModalElement) {
@@ -58,6 +59,7 @@ export class LoginComponent {
           }
         },
         error: (err) => {
+          this.isLoading = false; 
           console.error('Error during login', err);
           alert("An error occurred during login. Please try again later.");
         }
@@ -70,7 +72,7 @@ export class LoginComponent {
     if (this.otpForm.valid && this.storedUsername) {
       const otpData = {
         otp: this.otpForm.value.otp,
-        username: this.storedUsername, // Include username with OTP
+        username: this.storedUsername,
       };
 
       this.authService.verifyOtp(otpData).subscribe({
@@ -99,7 +101,7 @@ export class LoginComponent {
   }
 
 
-   // Submit Forgot Password
+   
    submitForgotPassword() {
     if (this.forgotPasswordForm.valid) {
       const email = this.forgotPasswordForm.value;
@@ -118,7 +120,7 @@ export class LoginComponent {
     }
   }
 
-  // Close Forgot Password Modal
+  
   closeForgotPasswordModal() {
     const forgotPasswordModalElement = document.getElementById('forgotPasswordModal');
     if (forgotPasswordModalElement) {
@@ -126,7 +128,7 @@ export class LoginComponent {
       forgotPasswordModalInstance?.hide();
     }
   }
-  // Close the OTP Modal
+ 
   closeOtpModal() {
     const otpModalElement = document.getElementById('otpModal');
     if (otpModalElement) {

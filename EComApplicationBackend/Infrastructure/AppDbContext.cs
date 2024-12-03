@@ -23,6 +23,8 @@ namespace Infrastructure
         public DbSet<Role> Roles { get; set; }
         public DbSet<Otp> Otps { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<CartMaster> Carts { get; set; }
+        public DbSet <CartDetail> CartDetails { get; set; }
 
         // For Dapper
         public IDbConnection GetConnection()

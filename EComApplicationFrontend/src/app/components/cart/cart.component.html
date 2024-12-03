@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="cart-container">
+    <h1>Shopping Cart</h1>
+    <div class="cart-items">
+      <div *ngIf="cart.length === 0">
+        <p>There is no product in your cart</p>
+      </div>
+      <div *ngFor="let product of cart" class="cart-item">
+        <div class="product-img">
+          <img [src]="'https://localhost:7066' + product.productimg" alt="{{ product.productname }}" />
+        </div>
+        <div class="product-details">
+          <h2>{{ product.productname }}</h2>
+          <p>Quantity: {{ product.quantity }}</p>
+          <p>Price: ${{ product.sellingprice }}</p>
+        </div>
+        <div class="remove-btn">
+          <!-- <button (click)="removeProduct(product.id)">Remove</button> -->
+          <button>Remove</button>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="cart-summary" *ngIf="cart.length > 0">
+      <h3>Order Summary</h3>
+      <!-- <p>Total Items: {{ getTotalItems() }}</p> -->
+      <!-- <p>Total Price: ${{ getTotalPrice() }}</p> -->
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+  

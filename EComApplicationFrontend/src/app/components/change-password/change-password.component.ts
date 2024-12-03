@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormControl, Validators, FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { AuthService } from '../../services/authServices/auth.service';
-import {NavbarComponent} from '../navbar/navbar.component';
-
+import { NavbarComponent } from '../navbar/navbar.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-change-password',
   standalone: true,
-  imports: [CommonModule, FormsModule,NavbarComponent],
+  imports: [CommonModule, FormsModule, NavbarComponent],
   templateUrl: './change-password.component.html',
   styleUrl: './change-password.component.css'
 })
 export class ChangePasswordComponent {
-  changePasswordDto = { newPassword: '' };
+  newPassword: string = '';
   confirmPassword: string = '';
   passwordsMismatch: boolean = false;
 
@@ -22,23 +21,21 @@ export class ChangePasswordComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit() {
-
-    console.log('newPassword:', this.changePasswordDto.newPassword);  
-    if (this.changePasswordDto.newPassword !== this.confirmPassword) {
+    if (this.newPassword !== this.confirmPassword) {
       this.passwordsMismatch = true;
       return;
     }
 
     const requestBody = {
-      userId: this.userId,
-      changePasswordDto: this.changePasswordDto
+      UserId: this.userId,  
+      NewPassword: this.newPassword
     };
+    
 
     this.authService.changePassword(requestBody).subscribe(
       response => {
         alert('Password changed successfully');
-        this.router.navigate(['/profile']); 
-        
+        this.router.navigate(['/profile']);
       },
       error => {
         alert('Error: ' + error.message);

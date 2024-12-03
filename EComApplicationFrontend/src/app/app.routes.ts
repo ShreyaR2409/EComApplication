@@ -7,6 +7,7 @@ import { AuthGuard } from './guard/auth.guard';
 import { ProductMasterComponent } from './components/product-master/product-master.component';
 import {ChangePasswordComponent} from './components/change-password/change-password.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { CartComponent } from './components/cart/cart.component';
 export const routes: Routes = [
     {
         path: 'login',
@@ -37,6 +38,10 @@ export const routes: Routes = [
     {
         path : 'product-list',
         component : ProductListComponent
+    },
+    {
+        path : 'cart',
+        component : CartComponent
     },
     {
         path: '',

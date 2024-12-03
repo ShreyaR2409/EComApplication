@@ -723,7 +723,6 @@ C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.AssemblyInfoInputs.cache
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.AssemblyInfo.cs
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.csproj.CoreCompileInputs.cache
-C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.MvcApplicationPartsAssemblyInfo.cs
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.MvcApplicationPartsAssemblyInfo.cache
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.sourcelink.json
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\staticwebassets.build.json
@@ -742,3 +741,4 @@ C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\ref\EComApplicationBackend.dll
 C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\bin\Debug\net8.0\EComApplicationBackend.staticwebassets.runtime.json
 D:\Angular\ECommerce\EComApplicationBackend\EComApplicationBackend\bin\Debug\net8.0\EComApplicationBackend.staticwebassets.runtime.json
+C:\EComApplication\EComApplication\EComApplicationBackend\EComApplicationBackend\obj\Debug\net8.0\EComApplicationBackend.MvcApplicationPartsAssemblyInfo.cs

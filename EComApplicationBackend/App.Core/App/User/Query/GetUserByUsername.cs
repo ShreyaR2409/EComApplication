@@ -30,8 +30,7 @@ namespace App.Core.App.User.Query
             var user = await connection.QueryFirstOrDefaultAsync<dynamic>(query, new { request.UserName });
 
             if (user != null)
-            {
-                // Manually convert DateTime to DateOnly
+            {                
                 var result = new Domain.Entities.User
                 {
                     id = user.id,
@@ -47,14 +46,13 @@ namespace App.Core.App.User.Query
                     zipcode = user.zipcode,
                     countryid = user.countryid,
                     stateid = user.stateid,
-                    // Convert DateTime to DateOnly
-                    dob = DateOnly.FromDateTime(user.dob) // Assuming user.dob is DateTime
+                    dob = DateOnly.FromDateTime(user.dob) 
                 };
 
                 return result;
             }
 
-            return null; // Return null if no user is found
+            return null;
         }
     }
 }

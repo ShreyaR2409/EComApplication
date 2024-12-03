@@ -12,7 +12,7 @@ namespace App.Core.App.User.Command
 {
     public class ChangePasswordCommand : IRequest<bool>
     {
-        public string UserId { get; set; } // Get this from the authenticated user's token/session
+        //public string UserId { get; set; } 
         public ChangePasswordDto ChangePasswordDto { get; set; }
     }
     public class ChangePasswordCommandHandler : IRequestHandler<ChangePasswordCommand, bool>
@@ -26,12 +26,11 @@ namespace App.Core.App.User.Command
 
         public async Task<bool> Handle(ChangePasswordCommand request, CancellationToken cancellationToken)
         {
-            int userId = int.Parse(request.UserId);
-            var newPassword = request.ChangePasswordDto.NewPassword;
+            var dto = request.ChangePasswordDto;
 
             // Fetch user by userId
             var user = await _appDbContext.Set<Domain.Entities.User>()
-                .FirstOrDefaultAsync(u => u.id == userId, cancellationToken);
+                .FirstOrDefaultAsync(u => u.id == dto.UserId, cancellationToken);
 
             if (user == null)
             {
@@ -39,18 +38,17 @@ namespace App.Core.App.User.Command
             }
 
             // Verify if the new password matches the current password
-            if (BCrypt.Net.BCrypt.Verify(newPassword, user.password))
+            if (BCrypt.Net.BCrypt.Verify(dto.NewPassword, user.password))
             {
                 return false; // New password is the same as the current password
             }
 
             // Hash and update the new password
-            user.password = BCrypt.Net.BCrypt.HashPassword(newPassword);
+            user.password = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
             _appDbContext.Set<Domain.Entities.User>().Update(user);
             await _appDbContext.SaveChangesAsync(cancellationToken);
 
             return true; // Password updated successfully
         }
     }
-
 }

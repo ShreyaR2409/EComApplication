@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../services/productServices/product.service';
 import { CartService } from '../../services/cartServices/cart.service';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
@@ -13,8 +13,10 @@ import { NavbarComponent } from '../navbar/navbar.component';
 })
 export class ProductListComponent {
   products: any[] = [];
-
-  constructor(private productService: ProductService, private cartService: CartService) {}
+  userid: any;
+  constructor(private productService: ProductService, private cartService: CartService) {
+    this.userid = sessionStorage.getItem("id");
+  }
 
   ngOnInit(): void {
     this.loadProducts();
@@ -26,14 +28,18 @@ export class ProductListComponent {
     });
   }
 
-  // addToCart(product: any): void {
-  //   if (product.stock > 0) {
-  //     this.cartService.addToCart(product).subscribe(() => {
-  //       alert('Product added to cart!');
-  //     });
-  //   } else {
-  //     alert('Product is out of stock!');
-  //   }
-  // }
+  addToCart(product: any): void {
+    if (product.stock > 0) {
+      const requestBody = {
+        productId: product.id,
+        quantity: 1 
+      };
+      this.cartService.AddToCart(this.userid, requestBody).subscribe(() => {
+        alert('Product added to cart!');
+      });
+    } else {
+      alert('Product is out of stock!');
+    }
+  }
 }
 

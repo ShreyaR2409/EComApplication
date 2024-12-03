@@ -61,9 +61,9 @@ export class AuthService {
     return this.http.post<any>(`${this.url}/ForgotPassword`, email)
   }
 
-  public changePassword(requestBody: { userId: string, changePasswordDto: { newPassword: string } }): Observable<any> {
-    return this.http.post(`${this.url}/ChangePassword`, requestBody);
-  }
+  public changePassword(requestBody: { UserId: string, NewPassword: string }): Observable<any> {
+    return this.http.post(`${this.url}/ChangePassword`, requestBody); 
+}
 
   public getAllCountries(): Observable<any[]> {
     return this.http.get<any[]>(`${this.countryStateUrl}/Country`);

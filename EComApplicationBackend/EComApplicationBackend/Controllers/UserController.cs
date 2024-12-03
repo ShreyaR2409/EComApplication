@@ -92,31 +92,21 @@ namespace EComApplicationBackend.Controllers
             return Ok("A new password has been sent to your email.");
         }
 
-        [Authorize]
         [HttpPost("ChangePassword")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto changePasswordDto)
         {
-            // Assuming you get the UserId from the JWT token or session
-            var userId = User.FindFirst("UserId")?.Value;
+            var result = await _mediator.Send(new ChangePasswordCommand { ChangePasswordDto = changePasswordDto });
 
-            if (string.IsNullOrEmpty(userId))
+            if (result)
             {
-                return Unauthorized("User not authenticated");
+                return Ok(new { message = "Password changed successfully" });
             }
-
-            var result = await _mediator.Send(new ChangePasswordCommand
+            else
             {
-                UserId = userId,
-                ChangePasswordDto = changePasswordDto
-            });
-
-            if (!result)
-            {
-                return BadRequest("New password cannot be the same as the current password.");
+                return BadRequest(new { message = "Error changing password" });
             }
-
-            return Ok("Password changed successfully");
         }
+
 
         [HttpGet("Roles")]
         public async Task<IActionResult> GetAllRoles()

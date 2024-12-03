@@ -1,4 +1,11 @@
 <div class="container">
+
+  <div *ngIf="isLoading" class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
   <form class="border p-3 rounded-3" [formGroup]="loginForm" (ngSubmit)="loginSubmitted()">
     <div class="row g-0">
       <div class="col text-center p-2 mb-3 bg-light">
