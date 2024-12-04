@@ -27,6 +27,11 @@
       <div class="col">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" formControlName="password">
+        <div
+        class="form-text text-danger"
+        *ngIf="loginForm.get('password')?.errors?.['required'] && loginForm.get('password')?.touched">
+        Password is required
+      </div>
       </div>
     </div>
     <div class="row mb-3">
@@ -40,7 +45,7 @@
     <div class="row">
       <div class="col-6 offset-3">
         <div class="d-grid">
-          <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+          <button type="submit" class="btn btn-primary">Login</button>
         </div>
       </div>
     </div>
@@ -67,7 +72,7 @@
               Please enter a valid email.
             </div>
           </div>
-          <button type="submit" class="btn btn-primary w-100" [disabled]="forgotPasswordForm.invalid">
+          <button type="submit" class="btn btn-primary w-100">
             Submit
           </button>
         </form>

@@ -30,9 +30,6 @@ namespace Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("cartId")
-                        .HasColumnType("int");
-
                     b.Property<int>("cartMasterId")
                         .HasColumnType("int");
 

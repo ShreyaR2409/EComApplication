@@ -42,22 +42,22 @@ namespace EComApplicationBackend.Controllers
             return Ok(result);
         }
         [HttpDelete]
-        public async Task<IActionResult> RemoveCartItems(int CartId , int ProductId)
+        public async Task<IActionResult> RemoveCartItems(int CartId, int ProductId)
         {
             var result = await _mediator.Send(new RemoveCartItems
             {
                 CartId = CartId,
                 ProductId = ProductId
             });
-            if(result == null)
+
+            if (!result)
             {
-                return BadRequest("Fail to remove the itmes");
+                return BadRequest("Failed to remove the item.");
             }
-            else
-            {
-                return Ok("Removed Successfully");
-            }
+
+            return Ok("Item removed successfully.");
         }
 
-    }
+
+}
 }

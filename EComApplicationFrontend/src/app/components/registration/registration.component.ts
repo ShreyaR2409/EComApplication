@@ -3,11 +3,13 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angula
 import { CommonModule } from '@angular/common'; 
 import { AuthService } from '../../services/authServices/auth.service';
 import { Router,RouterLink } from '@angular/router'; 
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule,RouterLink],
+  imports: [ReactiveFormsModule,CommonModule,RouterLink, MatSnackBarModule, MatProgressSpinnerModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
@@ -17,15 +19,18 @@ export class RegistrationComponent implements OnInit{
   states: any[] = [];
   roles: any[] = [];
   selectedFile: File | null = null;
-  constructor(private router: Router, private authService : AuthService) {}
+  isLoading = false;
+  todayDate: string = '';
+
+  constructor(private router: Router, private authService : AuthService, private snackBar: MatSnackBar) {}
 
   RegistrationForm = new FormGroup({
     firstname : new FormControl("",[Validators.required]),
     lastname : new FormControl("",[Validators.required]),
-    email : new FormControl("",[Validators.required]),
+    email : new FormControl("",[Validators.required, Validators.email]),
     roleid : new FormControl(null,[Validators.required]),
     dob : new FormControl("",[Validators.required]),
-    mobilenumber : new FormControl("",[Validators.required]),
+    mobilenumber : new FormControl("",[Validators.required,  Validators.pattern(/^[0-9]{10}$/)]),
     profileimage : new FormControl("",[Validators.required]),
     address : new FormControl("",[Validators.required]),
     zipcode : new FormControl("",[Validators.required]),
@@ -34,6 +39,8 @@ export class RegistrationComponent implements OnInit{
   })
 
   ngOnInit(): void {
+    const today = new Date();
+    this.todayDate = today.toISOString().split('T')[0];
     this.fetchCountries();
     this.fetchRoles();
     // Fetch states when country changes
@@ -89,24 +96,13 @@ export class RegistrationComponent implements OnInit{
     );
   }
 
-  // RegistrationFormSubmit(): void {
-  //   if (this.RegistrationForm.valid) {
-  //     const newUser = this.RegistrationForm.value;
-  //     this.authService.registerUser(newUser).subscribe({
-  //       next: (res) => {
-  //         console.log('Registration Successful', res);
-  //       },
-  //       error: (err) => {
-  //         console.error('Registration Failed', err);
-  //       },
-  //     });
-  //   } else {
-  //     console.error('Form is invalid');
-  //   }
-  // }
-
   RegistrationFormSubmit(): void {
+    if (this.RegistrationForm.invalid) {
+      this.RegistrationForm.markAllAsTouched();
+      console.error('Form is invalid');
+    }
     if (this.RegistrationForm.valid && this.selectedFile) {
+      this.isLoading = true;
       const formData = new FormData();
       formData.append('firstname', this.RegistrationForm.get('firstname')?.value || '');
       formData.append('lastname', this.RegistrationForm.get('lastname')?.value || '');
@@ -122,11 +118,23 @@ export class RegistrationComponent implements OnInit{
 
       this.authService.registerUser(formData).subscribe({
         next: (res) => {
+          this.isLoading = false;
           console.log('Registration Successful', res);
+          this.snackBar.open('User registered successfully', 'Close', {
+            duration: 3000,
+            verticalPosition: 'top', // or 'bottom'
+            horizontalPosition: 'right', // or 'right' | 'left'
+          });
           this.router.navigate(['/login']); 
         },
         error: (err) => {
+          this.isLoading = false;
           console.error('Registration Failed', err);
+          this.snackBar.open('Registration failed. Please try again.', 'Close', {
+            duration: 3000,
+            verticalPosition: 'top',
+            horizontalPosition: 'right',
+          });
         },
       });
     } else {

@@ -14,5 +14,6 @@ namespace App.Core.Models
         public string productname { get; set; }
         public int quantity { get; set; }
         public float sellingprice { get; set; }
+        public int CartId { get; set; }
     }
 }

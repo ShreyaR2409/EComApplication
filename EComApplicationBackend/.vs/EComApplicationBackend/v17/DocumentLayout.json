@@ -1,26 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\",
+  "WorkspaceRootPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\app\\cart\\command\\removecartitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\cart\\command\\removecartitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\cart\\command\\removecartitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\models\\getcartdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\getcartdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\models\\getcartdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\models\\getcartdetailresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|c:\\ecomapplication\\ecomapplication\\ecomapplicationbackend\\app.core\\app\\cart\\query\\getcartdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\cart\\query\\getcartdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\cart\\query\\getcartdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\infrastructure\\migrations\\20241204013134_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E2A2782-B75B-40E7-AD9B-7ABA98577DB9}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241204013134_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\ecomapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8623ABE8-F884-4BC7-91D4-E6811FEC8F1E}|EComApplicationBackend\\EComApplicationBackend.csproj|solutionrelative:ecomapplicationbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|d:\\angular\\ecommerce\\ecomapplicationbackend\\app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F921A0D8-F240-4CF5-AE65-8FBDCF32C6C8}|App.Core\\App.Core.csproj|solutionrelative:app.core\\app\\user\\query\\getuserbyusername.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,39 +42,38 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\CartController.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "EComApplicationBackend\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\Controllers\\CartController.cs",
               "RelativeToolTip": "EComApplicationBackend\\Controllers\\CartController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA5wDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T12:00:46.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GetUserByUsername.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
               "RelativeDocumentMoniker": "App.Core\\App\\User\\Query\\GetUserByUsername.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\User\\Query\\GetUserByUsername.cs",
               "RelativeToolTip": "App.Core\\App\\User\\Query\\GetUserByUsername.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T11:34:41.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T11:34:41.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GetCartDetailResponse.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\GetCartDetailResponse.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\GetCartDetailResponse.cs",
               "RelativeDocumentMoniker": "App.Core\\Models\\GetCartDetailResponse.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\Models\\GetCartDetailResponse.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\Models\\GetCartDetailResponse.cs",
               "RelativeToolTip": "App.Core\\Models\\GetCartDetailResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T11:20:54.493Z",
               "EditorCaption": ""
@@ -75,26 +82,52 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RemoveCartItems.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
               "RelativeDocumentMoniker": "App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
               "RelativeToolTip": "App.Core\\App\\Cart\\Command\\RemoveCartItems.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T11:15:14.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GetCartDetails.cs",
-              "DocumentMoniker": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
               "RelativeDocumentMoniker": "App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
-              "ToolTip": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
               "RelativeToolTip": "App.Core\\App\\Cart\\Query\\GetCartDetails.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T09:09:14.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241204013134_init.cs",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Migrations\\20241204013134_init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241204013134_init.cs",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Migrations\\20241204013134_init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241204013134_init.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T01:31:35.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "EComApplicationBackend\\appsettings.json",
+              "ToolTip": "D:\\Angular\\ECommerce\\EComApplicationBackend\\EComApplicationBackend\\appsettings.json",
+              "RelativeToolTip": "EComApplicationBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-03T15:17:57.066Z",
               "EditorCaption": ""
             }
           ]

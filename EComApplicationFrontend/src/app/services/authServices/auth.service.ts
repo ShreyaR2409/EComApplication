@@ -20,27 +20,21 @@ export class AuthService {
     return this.http.post<any>(`${this.url}`, formData);
   }
 
-  // public loginUser(user: any): Observable<any> {
-  //   return this.http.post<any>(`${this.url}/Login`, user);
-  // }
-
   public loginUser(user: any): Observable<any> {
     return this.http.post<any>(`${this.url}/Login`, user).pipe(
       tap((response) => {
         if (response && response.token) {
           sessionStorage.setItem('authToken', response.token);
-          this.loadCurrentUser(); // Load current user info and role
-          this.redirectUserBasedOnRole(); // Redirect based on role
+          this.loadCurrentUser(); 
+          this.redirectUserBasedOnRole(); 
         }
       })
     );
   }
 
-
   public updateUser(userId: number, userData: FormData): Observable<any> {
     return this.http.put(`${this.url}/Update-User/${userId}`, userData);
   }
-  
 
   public verifyOtp(otp: any): Observable<any> {
     return this.http.post<any>(`${this.url}/VerifyOtp`, otp).pipe(
@@ -57,13 +51,16 @@ export class AuthService {
     return this.http.get<any[]>(`${this.url}/UserByUsername?UserName=${username}`);
   }
 
-  public forgotPassword(email:any):Observable<any>{
-    return this.http.post<any>(`${this.url}/ForgotPassword`, email)
+  public forgotPassword(email: any): Observable<string> {
+    return this.http.post<string>(`${this.url}/ForgotPassword`, email, {
+      responseType: 'text' as 'json'
+    });
   }
+  
 
   public changePassword(requestBody: { UserId: string, NewPassword: string }): Observable<any> {
     return this.http.post(`${this.url}/ChangePassword`, requestBody); 
-}
+  }
 
   public getAllCountries(): Observable<any[]> {
     return this.http.get<any[]>(`${this.countryStateUrl}/Country`);

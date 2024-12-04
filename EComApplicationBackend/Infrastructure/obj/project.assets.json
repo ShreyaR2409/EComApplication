@@ -4956,19 +4956,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shreyaraut\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\shreyaraut\\.nuget\\packages\\",
-      "outputPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\Infrastructure\\obj\\",
+      "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\shreyaraut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4983,8 +4983,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
-              "projectPath": "C:\\EComApplication\\EComApplication\\EComApplicationBackend\\App.Core\\App.Core.csproj"
+            "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj": {
+              "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\App.Core\\App.Core.csproj"
             }
           }
         }

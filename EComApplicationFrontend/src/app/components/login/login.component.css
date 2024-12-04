@@ -16,3 +16,8 @@
     border-width: .25em;
   }
   
+  ::ng-deep .mat-snack-bar-container {
+    top: 10px !important; /* Top distance */
+    right: 10px !important; /* Right distance */
+  }
+  

@@ -30,7 +30,7 @@ namespace App.Core.App.Cart.Query
         public async Task<List<GetCartDetailResponse>> Handle(GetCartDetails request, CancellationToken cancellationToken)
         {
             using var connection = _appDbContext.GetConnection();
-            var query = "sp_getCartDetails";
+            var query = "getCartData";
             var dbParams = new
             {
                 Id = request.UserId

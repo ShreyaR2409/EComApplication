@@ -4,18 +4,19 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { AuthService } from '../../services/authServices/auth.service';
 import * as bootstrap from 'bootstrap';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterLink],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, MatSnackBarModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
   isLoading: boolean = false; 
 
-  constructor(private router: Router, private authService : AuthService) {}
+  constructor(private router: Router, private authService : AuthService, private snackBar: MatSnackBar) {}
 
   loginForm = new FormGroup({
     username: new FormControl('', [Validators.required]),
@@ -57,13 +58,21 @@ export class LoginComponent {
               otpModal.show();
             }
           }
+          this.snackBar.open('OTP has been sent to the registered email address', 'Close', {
+            duration: 5000,  // Duration for which Snackbar stays visible
+            verticalPosition: 'bottom', // Snackbar position (top or bottom)
+            horizontalPosition: 'right', // Snackbar position (right, left, or center)
+          });
+        // }
         },
         error: (err) => {
           this.isLoading = false; 
           console.error('Error during login', err);
-          alert("An error occurred during login. Please try again later.");
+          alert("Invalid Username or Password");
         }
       });
+    }else {
+      this.loginForm.markAllAsTouched();
     }
   }
   
@@ -105,8 +114,6 @@ export class LoginComponent {
    submitForgotPassword() {
     if (this.forgotPasswordForm.valid) {
       const email = this.forgotPasswordForm.value;
-      console.log('Forgot Password Email:', email);
-
       this.authService.forgotPassword(email).subscribe({
         next: (res) => {
           alert('Password reset link has been sent to your email.');
@@ -115,8 +122,11 @@ export class LoginComponent {
         error: (err) => {
           console.error('Error during password reset', err);
           alert('An error occurred. Please try again later.');
-        },
-      });
+        }
+      });      
+    }
+    else {
+      this.forgotPasswordForm.markAllAsTouched();
     }
   }
 
