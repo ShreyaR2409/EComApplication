@@ -25,6 +25,9 @@ namespace Infrastructure
         public DbSet<Product> Products { get; set; }
         public DbSet<CartMaster> Carts { get; set; }
         public DbSet <CartDetail> CartDetails { get; set; }
+        public DbSet <CardDetails> CardDetails {  get; set; }
+        public DbSet<SalesMaster> SalesMaster { get; set; }
+        public DbSet<SalesDetail> SalesDetail { get; set; }
 
         // For Dapper
         public IDbConnection GetConnection()

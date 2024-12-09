@@ -1,9 +1,9 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <button type="button" class="btn btn-primary" (click)="showAddProductModal()">Add Product</button>
+  <button type="button" class="btn btn-primary" (click)="showAddProductModal()">Add</button>
 
-  <table class="table">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <th>Product Name</th>
@@ -20,13 +20,13 @@
         <td>{{ product.category }}</td>
         <td>{{ product.brand }}</td>
         <td>
-          <button class="btn btn-primary" (click)="viewProductDetails(product.id)">View</button>
-          <!-- <button class="btn btn-primary" (click)="showEditProductModal(product.id)">Edit</button> -->
+          <button class="btn btn-primary" (click)="viewProductDetails(product.id)">View</button>&nbsp;
+          <button class="btn btn-primary" (click)="showEditProductModal(product.id)">Edit</button>&nbsp;
           <button class="btn btn-danger" (click)="confirmDeleteProduct(product.id)">Delete</button>
         </td>
       </tr>
     </tbody>
-  </table>
+  </table>  
 
   <pagination-controls (pageChange)="row = $event"></pagination-controls>
 </div>
@@ -36,7 +36,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+        <h2 class="modal-title" id="addProductModalLabel">Add New Product</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -59,11 +59,14 @@
           </div>
           <div class="mb-3">
             <label for="sellingPrice" class="form-label">Selling Price</label>
-            <input type="number" class="form-control" [(ngModel)]="newProduct.sellingprice" name="sellingprice" />
+            <input type="number" class="form-control" [(ngModel)]="newProduct.sellingprice" name="sellingprice"  (ngModelChange)="validatePrices()" />
+            <div *ngIf="priceError" class="text-danger mt-1">
+              Selling Price must be greater than Purchase Price.
+            </div>
           </div>
           <div class="mb-3">
             <label for="purchasePrice" class="form-label">Purchase Price</label>
-            <input type="number" class="form-control" [(ngModel)]="newProduct.purchaseprice" name="purchaseprice" />
+            <input type="number" class="form-control" [(ngModel)]="newProduct.purchaseprice" name="purchaseprice" (ngModelChange)="validatePrices()" />
           </div>
           <div class="mb-3">
             <label for="purchaseDate" class="form-label">Purchase Date</label>
@@ -87,39 +90,40 @@
   </div>
 </div>
 
-
-
 <!-- View Product Modal -->
 <div class="modal fade" id="viewProductModal" tabindex="-1" aria-labelledby="viewProductModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="viewProductModalLabel">Product Details</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModal()"></button>
-        </div>
-        <div class="modal-body">
-          <div *ngIf="selectedProduct">
-            <h3>{{ selectedProduct.productname }}</h3>
-            <p><strong>Product Code:</strong> {{ selectedProduct.productcode }}</p>
-            <p><strong>Category:</strong> {{ selectedProduct.category }}</p>
-            <p><strong>Brand:</strong> {{ selectedProduct.brand }}</p>
-            <p><strong>Price:</strong> ${{ selectedProduct.sellingprice }}</p>
-            <p><strong>Stock:</strong> {{ selectedProduct.stock }} items available</p>
-            <div *ngIf="selectedProduct.productimg">
-              <img [src]="'https://localhost:7066' + selectedProduct.productimg" alt="{{ selectedProduct.productname }}" class="img-fluid" />
-            </div>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="viewProductModalLabel">Product Details</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+          (click)="closeModal()"></button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="selectedProduct">
+          <h3>{{ selectedProduct.productname }}</h3>
+          <p><strong>Product Code:</strong> {{ selectedProduct.productcode }}</p>
+          <p><strong>Category:</strong> {{ selectedProduct.category }}</p>
+          <p><strong>Brand:</strong> {{ selectedProduct.brand }}</p>
+          <p><strong>Price:</strong> ${{ selectedProduct.sellingprice }}</p>
+          <p><strong>Stock:</strong> {{ selectedProduct.stock }} items available</p>
+          <div *ngIf="selectedProduct.productimg">
+            <img [src]="'https://localhost:7066' + selectedProduct.productimg" alt="{{ selectedProduct.productname }}"
+              class="img-fluid" />
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModalView()">Close</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+          (click)="closeModalView()">Close</button>
       </div>
     </div>
   </div>
+</div>
 
 
-  <!-- Edit Product Modal -->
-<!-- <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+<!-- Edit Product Modal -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -168,5 +172,4 @@
         </div>
       </div>
     </div>
-  </div>
-   -->
+  </div> 

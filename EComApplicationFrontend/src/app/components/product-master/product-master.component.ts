@@ -1,23 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/productServices/product.service';
 import { CommonModule } from '@angular/common';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { NavbarComponent } from '../navbar/navbar.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import * as bootstrap from 'bootstrap';
+import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-product-master',
   standalone: true,
-  imports: [CommonModule, NgxPaginationModule, NavbarComponent,RouterModule, FormsModule],
+  imports: [CommonModule, NgxPaginationModule, NavbarComponent,RouterModule, FormsModule, MatSnackBarModule, RouterLink],
   templateUrl: './product-master.component.html',
   styleUrl: './product-master.component.css'
 })
 
-export class ProductMasterComponent {
+export class ProductMasterComponent implements OnInit{
+  purchasePrice: number = 0;
+  sellingPrice: number = 0;
+  PriceMismatch: boolean = false;
+  priceError: boolean = false;
+
   products: any[] = [];
   row: number = 1;
   selectedProduct: any;
+
   newProduct: any = {
     productname: '',
     productcode: '',
@@ -30,10 +38,22 @@ export class ProductMasterComponent {
     productimg: null, 
   };
 
-  constructor(private productService: ProductService) {
-    this.getProducts();
+  constructor(private productService: ProductService, private snackBar: MatSnackBar) {
+    // this.getProducts();
   }
 
+  ngOnInit() {
+    this.productService.getAllProducts().subscribe({
+      next: (data) => {
+        this.products = data;
+        console.log(this.products);        
+      },
+      error: (err) => {
+        console.error(err);
+      },
+    });
+  }
+  
   // Fetch all products
   getProducts() {
     this.productService.getAllProducts().subscribe((data) => {
@@ -41,6 +61,10 @@ export class ProductMasterComponent {
     });
   }
 
+  validatePrices() {
+    this.priceError = this.newProduct.sellingprice <= this.newProduct.purchaseprice;
+  }
+ 
   // Show the Add Product modal
   showAddProductModal() {
     const modalElement = document.getElementById('addProductModal');
@@ -51,20 +75,20 @@ export class ProductMasterComponent {
   }
 
   // Show the Edit Product modal
-  // showEditProductModal(productId: number) {
-  //   this.productService.getProductById(productId).subscribe((product) => {
-  //     this.selectedProduct = { ...product }; // Copy data to selectedProduct for editing
-  //     this.showEditModal(); // Show the Edit Product modal
-  //   });
-  // }
+  showEditProductModal(productId: number) {
+    this.productService.getProductById(productId).subscribe((product) => {
+      this.selectedProduct = { ...product }; 
+      this.showEditModal(); // Show the Edit Product modal
+    });
+  }
 
-  // showEditModal() {
-  //   const modalElement = document.getElementById('editProductModal');
-  //   if (modalElement) {
-  //     const modal = new bootstrap.Modal(modalElement);
-  //     modal.show();
-  //   }
-  // }
+  showEditModal() {
+    const modalElement = document.getElementById('editProductModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 
    // Show the View Product modal and fetch product details by ID
    viewProductDetails(productId: number) {
@@ -94,16 +118,20 @@ export class ProductMasterComponent {
     }
   }
 
-  // Handle file input change
-  onFileChange(event: any) {
-    const file = event.target.files[0];
-    if (file) {
-      this.newProduct.productimg = file;
+  onFileChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      const file = input.files[0];
+      this.selectedProduct.productimg = file; // Update the file in the selectedProduct object
     }
   }
 
   // Add a new product
   addProduct() {
+    if (this.priceError) {
+      alert('Please correct the errors before adding the product.');
+      return;
+    }
     const formData = new FormData();
     formData.append('productname', this.newProduct.productname);
     formData.append('productcode', this.newProduct.productcode);
@@ -121,8 +149,13 @@ export class ProductMasterComponent {
     this.productService.addProduct(formData).subscribe(
       (response) => {
         console.log('Product added successfully', response);
-        this.getProducts(); // Refresh product list
-        this.closeModal();  // Close the modal after successful submission
+        this.snackBar.open('Product added successfully', 'Close', {
+          duration: 3000,
+          verticalPosition: 'bottom', 
+          horizontalPosition: 'right',
+        });
+        this.getProducts(); 
+        this.closeModal();  
       },
       (error) => {
         console.error('Error adding product', error);
@@ -141,7 +174,7 @@ export class ProductMasterComponent {
     this.productService.DeleteProduct(productId).subscribe(
       (response) => {
         console.log('Product deleted successfully', response);
-        this.getProducts(); // Refresh product list after deletion
+        this.getProducts(); 
       },
       (error) => {
         console.error('Error deleting product', error);
@@ -149,30 +182,36 @@ export class ProductMasterComponent {
     );
   }
 
-  // editProduct() {
-  //   const formData = new FormData();
-  //   formData.append('productname', this.selectedProduct.productname);
-  //   formData.append('productcode', this.selectedProduct.productcode);
-  //   formData.append('category', this.selectedProduct.category);
-  //   formData.append('brand', this.selectedProduct.brand);
-  //   formData.append('sellingprice', this.selectedProduct.sellingprice.toString());
-  //   formData.append('stock', this.selectedProduct.stock.toString());
-    
-  //   if (this.selectedProduct.productimg) {
-  //     formData.append('productimg', this.selectedProduct.productimg, this.selectedProduct.productimg.name);
-  //   }
-
-  //   this.productService.updateProduct(this.selectedProduct.id, formData).subscribe(
-  //     (response) => {
-  //       console.log('Product updated successfully', response);
-  //       this.getProducts(); // Refresh product list
-  //       this.closeModal();  // Close the modal after successful submission
-  //     },
-  //     (error) => {
-  //       console.error('Error updating product', error);
-  //     }
-  //   );
-  // }
+  editProduct() {
+    if (!this.selectedProduct) {
+      this.snackBar.open('No product selected for editing', 'Close', { duration: 3000 });
+      return;
+    }
+  
+    const formData = new FormData();
+    formData.append('productname', this.selectedProduct.productname);
+    formData.append('productcode', this.selectedProduct.productcode);
+    formData.append('category', this.selectedProduct.category);
+    formData.append('brand', this.selectedProduct.brand);
+    formData.append('sellingprice', this.selectedProduct.sellingprice.toString());
+    formData.append('stock', this.selectedProduct.stock.toString());
+  
+    if (this.selectedProduct.productimg instanceof File) {
+      formData.append('productimg', this.selectedProduct.productimg);
+    }
+  
+    this.productService.updateProduct(this.selectedProduct.id, formData).subscribe(
+      () => {
+        this.snackBar.open('Product updated successfully', 'Close', { duration: 3000 });
+        this.closeModalEdit();
+        this.getProducts(); 
+      },
+      (error) => {
+        this.snackBar.open('Failed to update product', 'Close', { duration: 3000 });
+        console.error('Error updating product:', error);
+      }
+    );
+  }
 
   // Close the modal
   closeModal() {
@@ -185,13 +224,13 @@ export class ProductMasterComponent {
     }
   }
 
-  // closeModalEdit() {
-  //   const modalElement = document.getElementById('editProductModal');
-  //   if (modalElement) {
-  //     const modal = bootstrap.Modal.getInstance(modalElement);
-  //     if (modal) {
-  //       modal.hide();
-  //     }
-  //   }
-  // }
+  closeModalEdit() {
+    const modalElement = document.getElementById('editProductModal');
+    if (modalElement) {
+      const modal = bootstrap.Modal.getInstance(modalElement);
+      if (modal) {
+        modal.hide();
+      }
+    }
+  }
 }

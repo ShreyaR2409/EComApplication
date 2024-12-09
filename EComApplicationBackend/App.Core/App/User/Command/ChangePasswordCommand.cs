@@ -28,27 +28,25 @@ namespace App.Core.App.User.Command
         {
             var dto = request.ChangePasswordDto;
 
-            // Fetch user by userId
             var user = await _appDbContext.Set<Domain.Entities.User>()
                 .FirstOrDefaultAsync(u => u.id == dto.UserId, cancellationToken);
 
             if (user == null)
             {
-                return false; // User not found
+                return false; 
             }
 
-            // Verify if the new password matches the current password
             if (BCrypt.Net.BCrypt.Verify(dto.NewPassword, user.password))
             {
-                return false; // New password is the same as the current password
+                return false; 
             }
 
-            // Hash and update the new password
+      
             user.password = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
             _appDbContext.Set<Domain.Entities.User>().Update(user);
             await _appDbContext.SaveChangesAsync(cancellationToken);
 
-            return true; // Password updated successfully
+            return true; 
         }
     }
 }

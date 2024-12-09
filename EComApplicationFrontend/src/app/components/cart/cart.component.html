@@ -6,6 +6,7 @@
       <p>There is no product in your cart</p>
     </div>
     <div *ngFor="let product of cart" class="cart-item">
+        @if(product.cartid != 0){
       <div class="product-img">
         <img [src]="'https://localhost:7066' + product.productimg" alt="{{ product.productname }}" />
       </div>
@@ -15,13 +16,51 @@
         <p>Price: ${{ product.sellingprice }}</p>
       </div>
       <div class="remove-btn">
-        <button (click)="removeProduct(product.id)">Remove</button>
+        <button (click)="addToCart(product)">Add</button>
+      </div>&nbsp;&nbsp;
+      <div class="remove-btn">
+        <button (click)="removeProduct(product)">Remove</button>
       </div>
-    </div>
+  }
   </div>
-
-  <div class="cart-summary" *ngIf="cart.length > 0">
+  </div>
+  <!-- <div class="cart-summary" *ngIf="cart.length > 0">
     <h3>Order Summary</h3>
     <button class="checkout-btn">Proceed to Checkout</button>
+  </div> -->
+  <div class="cart-summary" *ngIf="cart.length > 0">
+    <h3>Order Summary</h3>
+    <div class="order-total">
+      <p>Total Price: ${{ totalPrice | number:'1.2-2' }}</p>
+    </div>
+    <button class="checkout-btn" (click)="openCheckoutModal()">Proceed to Checkout</button>
+  </div>
+</div>
+
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="checkoutModalLabel">Payment Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="processPayment()">
+          <div class="mb-3">
+            <label for="cardNumber" class="form-label">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" [(ngModel)]="paymentDetails.cardNumber" name="cardNumber" required />
+          </div>
+          <div class="mb-3">
+            <label for="expiryDate" class="form-label">Expiry Date</label>
+            <input type="month" class="form-control" id="expiryDate" [(ngModel)]="paymentDetails.expiryDate" name="expiryDate" required />
+          </div>
+          <div class="mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cvv" [(ngModel)]="paymentDetails.cvv" name="cvv" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Pay Now</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>

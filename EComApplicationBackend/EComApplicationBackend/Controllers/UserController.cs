@@ -107,7 +107,6 @@ namespace EComApplicationBackend.Controllers
             }
         }
 
-
         [HttpGet("Roles")]
         public async Task<IActionResult> GetAllRoles()
         {

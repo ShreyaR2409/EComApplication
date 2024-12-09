@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241204013134_init")]
-    partial class init
+    [Migration("20241209122748_SalesTable")]
+    partial class SalesTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,28 @@ namespace Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Domain.Entities.CardDetails", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("cardnumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("cvv")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("expirydate")
+                        .HasColumnType("date");
+
+                    b.HasKey("id");
+
+                    b.ToTable("CardDetails");
+                });
 
             modelBuilder.Entity("Domain.Entities.CartDetail", b =>
                 {
@@ -168,6 +190,80 @@ namespace Infrastructure.Migrations
                     b.ToTable("Roles");
                 });
 
+            modelBuilder.Entity("Domain.Entities.SalesDetail", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("invoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("productCode")
+                        .HasColumnType("int");
+
+                    b.Property<int>("quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("salesMasterid")
+                        .HasColumnType("int");
+
+                    b.Property<float>("sellingPrice")
+                        .HasColumnType("real");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("salesMasterid");
+
+                    b.ToTable("SalesDetail");
+                });
+
+            modelBuilder.Entity("Domain.Entities.SalesMaster", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("invoiceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("invoiceId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("state")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("total")
+                        .HasColumnType("int");
+
+                    b.Property<int>("userid")
+                        .HasColumnType("int");
+
+                    b.Property<string>("zipcode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("userid");
+
+                    b.ToTable("SalesMaster");
+                });
+
             modelBuilder.Entity("Domain.Entities.State", b =>
                 {
                     b.Property<int>("id")
@@ -273,6 +369,28 @@ namespace Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Domain.Entities.SalesDetail", b =>
+                {
+                    b.HasOne("Domain.Entities.SalesMaster", "salesMaster")
+                        .WithMany()
+                        .HasForeignKey("salesMasterid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("salesMaster");
+                });
+
+            modelBuilder.Entity("Domain.Entities.SalesMaster", b =>
+                {
+                    b.HasOne("Domain.Entities.User", "user")
+                        .WithMany()
+                        .HasForeignKey("userid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("Domain.Entities.User", b =>

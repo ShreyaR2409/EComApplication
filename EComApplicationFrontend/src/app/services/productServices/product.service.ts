@@ -12,7 +12,9 @@ export class ProductService {
    public url = "https://localhost:7066/api/Product";
 
    addProduct(productData: FormData): Observable<any> {
-    return this.http.post(`${this.url}/Add-Product`, productData);
+    return this.http.post(`${this.url}/Add-Product`, productData, {
+      responseType: 'text' as 'json'
+    });
   }
 
   getProductById(productId: number): Observable<any> {
@@ -27,11 +29,9 @@ export class ProductService {
     return this.http.get<any[]>(`${this.url}/GetAll-Product`);
   }
 
-  //  public updateProduct(product: any): Observable<any> {
-  //   return this.http.put<any>(`${this.url}/Update-Product/${product.id}`, product);
-  // }
-
   updateProduct(productId: number, formData: FormData): Observable<any> {
-    return this.http.put<any>(`${this.url}/Update-Product/${productId}`, formData);
+    return this.http.put<any>(`${this.url}/Update-Product/${productId}`, formData, {
+      responseType: 'text' as 'json'
+    } );
   }
 }

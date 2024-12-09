@@ -46,7 +46,7 @@ namespace App.Core.App.Product.Command
             // Validate that selling price is greater than purchase price
             if (productDto.sellingprice <= productDto.purchaseprice)
             {
-                throw new ArgumentException("Selling Price must be greater than Purchase Price.");
+                return null;
             }
 
             // Map ProductDto to ProductEntity using Mapster

@@ -29,7 +29,7 @@ namespace EComApplicationBackend.Controllers
             var result = await _mediator.Send(new AddProductCommand { product = productDto });
             if (result == null)
             {
-                return BadRequest("");
+                return Ok("Selling Price must be greater than Purchase Price.");
             }
             return Ok(result);
         }

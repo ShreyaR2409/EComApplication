@@ -27,7 +27,7 @@ namespace App.Core.App.Cart.Command
         public async Task<bool> Handle(RemoveCartItems request, CancellationToken cancellationToken)
         {
             var cartItem = await _appDbContext.Set<CartDetail>()
-                .FirstOrDefaultAsync(p => p.cartMasterId == request.CartId && p.productId == request.ProductId, cancellationToken);
+                .FirstOrDefaultAsync(p => p.Id == request.CartId && p.productId == request.ProductId, cancellationToken);
 
             if (cartItem == null)
             {
@@ -37,10 +37,12 @@ namespace App.Core.App.Cart.Command
             if (cartItem.quantity > 1)
             {
                 cartItem.quantity--;
+                await _appDbContext.SaveChangesAsync(cancellationToken);
             }
             else
             {
                 _appDbContext.Set<CartDetail>().Remove(cartItem);
+                await _appDbContext.SaveChangesAsync(cancellationToken);
             }
 
             await _appDbContext.SaveChangesAsync(cancellationToken);

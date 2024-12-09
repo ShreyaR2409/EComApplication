@@ -48,7 +48,12 @@ export class LoginComponent {
           console.log('Login form submitted', res);
   
           if (res.status === 'Failure') {
-            alert("Invalid Username or Password");
+            // alert("Invalid Username or Password");
+            this.snackBar.open('Invalid Username or Password', 'Close', {
+              duration: 3000,
+              verticalPosition: 'top', 
+              horizontalPosition: 'right', 
+            });
           } else {
             
             this.storedUsername = user.username || null;
@@ -59,16 +64,20 @@ export class LoginComponent {
             }
           }
           this.snackBar.open('OTP has been sent to the registered email address', 'Close', {
-            duration: 5000,  // Duration for which Snackbar stays visible
-            verticalPosition: 'bottom', // Snackbar position (top or bottom)
-            horizontalPosition: 'right', // Snackbar position (right, left, or center)
+            duration: 5000, 
+            verticalPosition: 'bottom', 
+            horizontalPosition: 'right',
           });
         // }
         },
         error: (err) => {
           this.isLoading = false; 
           console.error('Error during login', err);
-          alert("Invalid Username or Password");
+          this.snackBar.open('Invalid Username or Password', 'Close', {
+            duration: 3000,
+            verticalPosition: 'bottom', 
+            horizontalPosition: 'right', 
+          });
         }
       });
     }else {
@@ -86,14 +95,22 @@ export class LoginComponent {
 
       this.authService.verifyOtp(otpData).subscribe({
         next: (res) => {
-          alert('OTP Verified Successfully!');
+          this.snackBar.open('OTP Verified Successfully!', 'Close', {
+            duration: 3000,
+            verticalPosition: 'bottom', 
+            horizontalPosition: 'right', 
+          });
           this.authService.loadCurrentUser();
           this.router.navigateByUrl('home');
           this.closeOtpModal();
         },
         error: (err) => {
           console.error('Error during OTP verification', err);
-          alert('OTP verification failed. Please try again.');
+          this.snackBar.open('OTP verification failed. Please try again.', 'Close', {
+            duration: 3000,
+            verticalPosition: 'top', 
+            horizontalPosition: 'right', 
+          });
         },
       });
     } else {
@@ -108,18 +125,19 @@ export class LoginComponent {
       modal.show();
     }
   }
-
-
    
    submitForgotPassword() {
     if (this.forgotPasswordForm.valid) {
       const email = this.forgotPasswordForm.value;
+      this.isLoading = true;
       this.authService.forgotPassword(email).subscribe({
         next: (res) => {
-          alert('Password reset link has been sent to your email.');
+          this.isLoading = false;
+          alert('New Password has been sent to your email.');
           this.closeForgotPasswordModal();
         },
         error: (err) => {
+          this.isLoading = false;
           console.error('Error during password reset', err);
           alert('An error occurred. Please try again later.');
         }

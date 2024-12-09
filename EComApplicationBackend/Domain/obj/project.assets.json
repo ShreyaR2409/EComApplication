@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\shreyaraut\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\shreyaraut\\ECom\\EComApplication\\EComApplicationBackend\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Angular\\ECommerce\\EComApplicationBackend\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\shreyaraut\\ECom\\EComApplication\\EComApplicationBackend\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\shreyaraut\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shreyaraut\\ECom\\EComApplication\\EComApplicationBackend\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shreyaraut\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

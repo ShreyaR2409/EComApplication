@@ -30,7 +30,7 @@ export class RegistrationComponent implements OnInit{
     email : new FormControl("",[Validators.required, Validators.email]),
     roleid : new FormControl(null,[Validators.required]),
     dob : new FormControl("",[Validators.required]),
-    mobilenumber : new FormControl("",[Validators.required,  Validators.pattern(/^[0-9]{10}$/)]),
+    mobilenumber : new FormControl("",[Validators.required]),
     profileimage : new FormControl("",[Validators.required]),
     address : new FormControl("",[Validators.required]),
     zipcode : new FormControl("",[Validators.required]),
@@ -120,10 +120,10 @@ export class RegistrationComponent implements OnInit{
         next: (res) => {
           this.isLoading = false;
           console.log('Registration Successful', res);
-          this.snackBar.open('User registered successfully', 'Close', {
+          this.snackBar.open('User registered successfully. Please Check mail for Username and Password', 'Close', {
             duration: 3000,
-            verticalPosition: 'top', // or 'bottom'
-            horizontalPosition: 'right', // or 'right' | 'left'
+            verticalPosition: 'bottom',
+            horizontalPosition: 'right',
           });
           this.router.navigate(['/login']); 
         },

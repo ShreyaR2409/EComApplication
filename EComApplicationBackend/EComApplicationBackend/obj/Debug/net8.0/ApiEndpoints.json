@@ -68,6 +68,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EComApplicationBackend.Controllers.CartController",
+    "Method": "ValidateCardDetails",
+    "RelativePath": "api/Cart/Card-Details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cardDetails",
+        "Type": "Domain.Entities.CardDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EComApplicationBackend.Controllers.CountryCityController",
     "Method": "GetCountries",
     "RelativePath": "api/CountryCity/Country",

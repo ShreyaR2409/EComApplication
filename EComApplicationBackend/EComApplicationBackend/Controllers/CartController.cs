@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using App.Core.App.Cart.Command; 
 using App.Core.Models;
-using App.Core.App.Cart.Query; 
+using App.Core.App.Cart.Query;
+using Domain.Entities;
 
 namespace EComApplicationBackend.Controllers
 {
@@ -58,6 +59,19 @@ namespace EComApplicationBackend.Controllers
             return Ok("Item removed successfully.");
         }
 
+        [HttpPost("Card-Details")]
+        public async Task<IActionResult> ValidateCardDetails(CardDetails cardDetails)
+        {
+            var result = await _mediator.Send(new CardDetailsCommand
+            {
+                CardDetails = cardDetails
+            });
+            if (!result) 
+            { 
+                return NotFound();
+            }
+            return Ok("Details Matched");
+        }
 
 }
 }
