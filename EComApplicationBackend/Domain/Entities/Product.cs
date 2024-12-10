@@ -10,7 +10,7 @@ namespace Domain.Entities
     {
         public int id { get; set; }
         public string productname { get; set; }
-        public string productcode { get; set; }
+        public int productcode { get; set; }
         public string productimg { get; set; }
         public string category { get; set; }
         public string brand { get; set; }

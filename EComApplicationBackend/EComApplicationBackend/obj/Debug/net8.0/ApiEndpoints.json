@@ -84,6 +84,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EComApplicationBackend.Controllers.CartController",
+    "Method": "GenerateInvoice",
+    "RelativePath": "api/Cart/generateInvoic/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EComApplicationBackend.Controllers.CountryCityController",
     "Method": "GetCountries",
     "RelativePath": "api/CountryCity/Country",
@@ -140,7 +156,7 @@
       },
       {
         "Name": "productcode",
-        "Type": "System.String",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -227,7 +243,7 @@
       },
       {
         "Name": "productcode",
-        "Type": "System.String",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {

@@ -10,7 +10,7 @@
   <form class="border p-3 rounded-3" [formGroup]="RegistrationForm" (ngSubmit)="RegistrationFormSubmit()">
     <div class="row g-0">
       <div class="col text-center p-2 mb-3 bg-light">
-        <h1>Registration</h1>
+        <h1><strong>Registration</strong></h1>
       </div>
     </div>
 
@@ -18,7 +18,7 @@
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="firstname" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstname" maxlength="85" formControlName="firstname">
+        <input type="text" class="form-control" id="firstname" maxlength="25" formControlName="firstname">
         <div class="form-text text-danger" *ngIf="RegistrationForm.get('firstname')?.errors?.['required'] && RegistrationForm.get('firstname')?.touched">
           First Name is required
         </div>
@@ -26,7 +26,7 @@
 
       <div class="col-md-6">
         <label for="lastname" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="lastname" formControlName="lastname">
+        <input type="text" class="form-control" id="lastname" maxlength="25" formControlName="lastname">
         <div class="form-text text-danger" *ngIf="RegistrationForm.get('lastname')?.errors?.['required'] && RegistrationForm.get('lastname')?.touched">
           Last Name is required
         </div>
@@ -135,14 +135,12 @@
       </div>
     </div>
 
-    <!-- Login Link -->
     <div class="row mb-3">
       <div class="col text-center">
         Already have an account? <a routerLink="/login" class="text-primary">Login</a>
       </div>
     </div>
 
-    <!-- Submit Button -->
     <div class="row">
       <div class="col-6 offset-3">
         <div class="d-grid">

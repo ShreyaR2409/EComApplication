@@ -48,10 +48,9 @@ export class LoginComponent {
           console.log('Login form submitted', res);
   
           if (res.status === 'Failure') {
-            // alert("Invalid Username or Password");
             this.snackBar.open('Invalid Username or Password', 'Close', {
               duration: 3000,
-              verticalPosition: 'top', 
+              verticalPosition: 'bottom', 
               horizontalPosition: 'right', 
             });
           } else {
@@ -108,7 +107,7 @@ export class LoginComponent {
           console.error('Error during OTP verification', err);
           this.snackBar.open('OTP verification failed. Please try again.', 'Close', {
             duration: 3000,
-            verticalPosition: 'top', 
+            verticalPosition: 'bottom', 
             horizontalPosition: 'right', 
           });
         },
@@ -139,7 +138,11 @@ export class LoginComponent {
         error: (err) => {
           this.isLoading = false;
           console.error('Error during password reset', err);
-          alert('An error occurred. Please try again later.');
+          this.snackBar.open('Invalid Email', 'Close', {
+            duration: 3000,
+            verticalPosition: 'bottom', 
+            horizontalPosition: 'right', 
+          });
         }
       });      
     }

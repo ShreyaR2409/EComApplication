@@ -20,46 +20,25 @@ export class CartService {
   
   constructor(private http: HttpClient, private router: Router) { }
 
-  // public AddToCart(id: number, data: any): Observable<any> {
-  //   return this.http.post<any>(`${this.url}/add?id=${id}`, data, {
-  //     responseType: 'text' as 'json'
-  //   }).pipe(
-  //     tap(() => this.updateCart(id)) // After adding, update the cart
-  //   );
-  // }
-
-   // Add a product to the cart
    public AddToCart(id: number, data: any): Observable<any> {
     return this.http.post<any>(`${this.url}/add?id=${id}`, data, {
       responseType: 'text' as 'json'
     }).pipe(
-      tap(() => this.updateCart(id)) // After adding, update the cart
+      tap(() => this.updateCart(id)) 
     );
   }
 
-
-  // public GetCartDetail(id : number) : Observable<any>{
-  //   return this.http.get<any>(`${this.url}/${id}`);
-  // }
-
-    // Get cart details and update the BehaviorSubject
     public GetCartDetail(id: number): Observable<any> {
       return this.http.get<any>(`${this.url}/${id}`).pipe(
-        tap(cartData => this.cartSubject.next(cartData)) // Update BehaviorSubject with the new cart data
+        tap(cartData => this.cartSubject.next(cartData)) 
       );
     }
 
-  // public removeCartItem(id: number, productId: number): Observable<any> {
-  //   console.log("Services", id , productId);    
-  //   return this.http.delete<any>(`${this.url}?CartId=${id}&ProductId=${productId}`);
-  // }
-
-    // Remove a product from the cart
     public removeCartItem(id: number, productId: number): Observable<any> {
       return this.http.delete<any>(`${this.url}?CartId=${id}&ProductId=${productId}`, {
         responseType : 'text' as 'json'
       }).pipe(
-        tap(() => this.updateCart(id)) // After removing, update the cart
+        tap(() => this.updateCart(id)) 
       );
     }
 
@@ -71,7 +50,7 @@ export class CartService {
 
     
   private updateCart(id: number): void {
-    this.GetCartDetail(id).subscribe(); // Refresh the cart data
+    this.GetCartDetail(id).subscribe(); 
   }
   
 }

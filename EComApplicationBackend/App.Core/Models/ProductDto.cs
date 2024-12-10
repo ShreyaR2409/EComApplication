@@ -10,7 +10,7 @@ namespace App.Core.Models
     public class ProductDto
     {
         public string productname { get; set; }
-        public string productcode { get; set; }
+        public int productcode { get; set; }
         public IFormFile productimg { get; set; }
         public string category { get; set; }
         public string brand { get; set; }

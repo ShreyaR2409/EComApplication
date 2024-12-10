@@ -9,13 +9,13 @@
   <form class="border p-3 rounded-3" [formGroup]="loginForm" (ngSubmit)="loginSubmitted()">
     <div class="row g-0">
       <div class="col text-center p-2 mb-3 bg-light">
-        <h3>Login</h3>
+        <h1><strong>Login</strong></h1>
       </div>
-    </div>
+    </div>  
     <div class="row mb-3">
       <div class="col">
         <label for="email" class="form-label">Username</label>
-        <input type="email" class="form-control" id="username" formControlName="username">
+        <input type="email" class="form-control" id="username" maxlength="10" formControlName="username">
         <div
           class="form-text text-danger"
           *ngIf="loginForm.get('username')?.errors?.['required'] && loginForm.get('username')?.touched">
@@ -81,7 +81,6 @@
   </div>
 </div>
 
-<!-- Bootstrap Modal for OTP -->
 <div
   class="modal fade"
   id="otpModal"

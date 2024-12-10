@@ -132,7 +132,7 @@ export class RegistrationComponent implements OnInit{
           console.error('Registration Failed', err);
           this.snackBar.open('Registration failed. Please try again.', 'Close', {
             duration: 3000,
-            verticalPosition: 'top',
+            verticalPosition: 'bottom',
             horizontalPosition: 'right',
           });
         },

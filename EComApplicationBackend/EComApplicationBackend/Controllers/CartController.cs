@@ -66,12 +66,20 @@ namespace EComApplicationBackend.Controllers
             {
                 CardDetails = cardDetails
             });
-            if (!result) 
-            { 
+            if (!result)
+            {
                 return NotFound();
             }
             return Ok("Details Matched");
         }
 
-}
+        [HttpGet("generateInvoic/{userId}")]
+        public async Task<IActionResult> GenerateInvoice(int userId)
+        {
+            var addPayment = await _mediator.Send(new GetInvoiceDetailsQuery { SalesId = userId });
+            return Ok(addPayment);
+        }
+
+
+    }
 }

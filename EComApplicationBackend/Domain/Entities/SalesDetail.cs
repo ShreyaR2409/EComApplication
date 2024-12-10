@@ -12,7 +12,7 @@ namespace Domain.Entities
         public int id {  get; set; }
         [ForeignKey("SalesMaster")]
         public int invoiceId { get; set; }
-        public SalesMaster salesMaster { get; set; }
+        public SalesMaster? salesMaster { get; set; }
         public int productCode { get; set; }
         public int quantity {  get; set; }
         public float sellingPrice { get; set; }

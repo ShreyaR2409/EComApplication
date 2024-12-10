@@ -8,6 +8,7 @@ import { ProductMasterComponent } from './components/product-master/product-mast
 import {ChangePasswordComponent} from './components/change-password/change-password.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { CartComponent } from './components/cart/cart.component';
+import { InvoiceComponent } from './components/invoice/invoice.component';
 export const routes: Routes = [
     {
         path: 'login',
@@ -42,6 +43,10 @@ export const routes: Routes = [
     {
         path : 'cart',
         component : CartComponent
+    },
+    {
+        path : 'invoice',
+        component : InvoiceComponent
     },
     {
         path: '',

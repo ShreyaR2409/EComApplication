@@ -24,10 +24,6 @@
   }
   </div>
   </div>
-  <!-- <div class="cart-summary" *ngIf="cart.length > 0">
-    <h3>Order Summary</h3>
-    <button class="checkout-btn">Proceed to Checkout</button>
-  </div> -->
   <div class="cart-summary" *ngIf="cart.length > 0">
     <h3>Order Summary</h3>
     <div class="order-total">
@@ -52,13 +48,13 @@
           </div>
           <div class="mb-3">
             <label for="expiryDate" class="form-label">Expiry Date</label>
-            <input type="month" class="form-control" id="expiryDate" [(ngModel)]="paymentDetails.expiryDate" name="expiryDate" required />
+            <input type="date" class="form-control" id="expiryDate" [(ngModel)]="paymentDetails.expiryDate" name="expiryDate" required />
           </div>
           <div class="mb-3">
             <label for="cvv" class="form-label">CVV</label>
             <input type="text" class="form-control" id="cvv" [(ngModel)]="paymentDetails.cvv" name="cvv" required />
           </div>
-          <button type="submit" class="btn btn-primary">Pay Now</button>
+          <button type="submit" class="btn btn-primary" (click)="pay()">Pay Now</button>
         </form>
       </div>
     </div>
